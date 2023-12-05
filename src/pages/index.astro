@@ -1,15 +1,35 @@
 ---
 import '../styles/global.css';
 import MainLayout from "../layouts/MainLayout.astro";
-
+import Knap from "../components/Knap.astro"
 
 ---
 
 <MainLayout>
+<section class="banner_forside">
+<div>
+	<img src="" alt="forsidebillede">
+	<img src="/img/logo_stor_hvid.svg" alt="logo">
+</div>
+<div>
+    <Knap variant="primary" link="/menu">Menu</Knap>
+	<Knap variant="primary" link="/bestilbord">Bestil bord</Knap>
+    <Knap variant="primary" link="/omos">Om os</Knap>
+</div>
+<div>
+	<img src="/img/pil.svg" alt="pil" class="pil">
+</div>
 
+</section>
 
 </MainLayout>
 
 <style>
-	
+	/*Mobile*/
+.pil{
+	width: 100px;
+}
+.banner_forside{
+	background-color: brown;
+}
 </style>
