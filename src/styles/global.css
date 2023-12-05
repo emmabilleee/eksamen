@@ -1,9 +1,45 @@
-p {
-  font-family: "Mulish", sans-serif;
-}
+/*********Mobil*********/
 h1 {
   font-family: "Yeseva One", serif;
+  font-size: 50px;
+}
+h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+}
+h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 18px;
+}
+p {
+  font-family: "Mulish", sans-serif;
+  line-height: 30px;
+  font-size: 15px;
 }
 a {
   font-family: "Montaga", serif;
+  font-size: 18px;
+}
+
+/*********Web*********/
+h1 {
+  font-family: "Yeseva One", serif;
+  font-size: 70px;
+}
+h2 {
+  font-family: "Yeseva One", serif;
+  font-size: 50px;
+}
+h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 40px;
+}
+p {
+  font-family: "Mulish", sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+}
+a {
+  font-family: "Montaga", serif;
+  font-size: 20px;
 }
