@@ -36,8 +36,8 @@ import Knap from "../components/Knap.astro"
 <br/>
 <br/>
 	Ann-Christin Rudy og Jimmy Streit</p>
-	<img src="/img/image-asset.jpeg" alt="madbillede">
-	<img src="/img/1971.png" alt="selskabbillede">
+	<img src="/img/mad_placeholder.jpeg" alt="madbillede" class="madbillede">
+	<img src="/img/selskaber_placeholder.jpeg" alt="selskabbillede" class="selskabsbillede">
 	<h2>Selskaber hos restaurant 1971</h2>
 	<p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig 
 mærkedag i hyggelige omgivelser centralt på Frederiksberg. 
@@ -132,6 +132,16 @@ personlig snak om jeres ønsker.
   		line-height: 35px;
   		font-size: 15px;	
 		font-weight: lighter;
+}
+.madbillede{
+	height: auto;
+	width: 100%;
+	aspect-ratio: 4/3;
+}
+.selskabbillede{
+	height: auto;
+	width: 120%;
+	aspect-ratio: 4/3;
 }
 
 </style>
