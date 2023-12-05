@@ -1,15 +1,137 @@
 ---
 import '../styles/global.css';
 import MainLayout from "../layouts/MainLayout.astro";
-
+import Knap from "../components/Knap.astro"
 
 ---
 
 <MainLayout>
+<section class="section1">
+	<div class="logoe">
+		<img src="/img/forside_placeholder.jpeg" alt="forsidebillede" class="forsidebillede">
+		<img src="/img/logo_stor_hvid.svg" alt="logo" class="logo">
+	</div>
+	<div class="knapper">
+		<Knap variant="primary" link="/menu">Menu</Knap>
+		<Knap variant="primary" link="/bestilbord">Bestil bord</Knap>
+		<Knap variant="primary" link="/omos">Om os</Knap>
+	</div>
+	<div class="pil_boks">
+		<img src="/img/pil_hvid.svg" alt="pil" class="pil zoom">
+	</div>
 
+</section>
+
+<section class="section2">
+	<h2>Velkommen til restarant 1971</h2>
+	<p class="underoverskrift">Dansk mad med et strejf af fransk bistro</p>
+	<p>Restaurant 1971 er en del af Frederik VI på Frederiksberg Alle 
+	42A, og betragtes som en søsterfilial til vores yderst velbesøgte 
+	“Frederik VI Ølbar & Spisested”. Det er vores ambition at 
+	drive 1971 som et kvalificeret alternativ, med mere fokus på 
+	madoplevelsen. Hertil fokus på vine. Der er nu også en bar på 
+	Restauranten, hvor vi serverer øl fra de lokale bryggerier: 
+	Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin 
+	på glas + snacks.
+<br/>
+<br/>
+	Ann-Christin Rudy og Jimmy Streit</p>
+	<img src="/img/forside_placeholder.jpeg" alt="madbillede">
+	<img src="/img/forside_placeholder.jpeg" alt="selskabbillede">
+	<h2>Selskaber hos restaurant 1971</h2>
+	<p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig 
+mærkedag i hyggelige omgivelser centralt på Frederiksberg. 
+Vi modtager dags- og aftenarrangementer på op til 50 personer.
+Vi tilbyder forskellige selskabsmenuer, men tager en 
+personlig snak om jeres ønsker. 
+</p>
+</section>
 
 </MainLayout>
 
 <style>
+	/*Mobile*/
+	/*Section 1*/
+
+	.logoe{
+		display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 100px;
+      align-items: center;
+	}
 	
+	.forsidebillede {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      z-index: -1;
+      object-fit: cover;
+      aspect-ratio: 16/9;      
+       width: 100%;
+        height: auto; 
+    }
+	.logo{
+		width: 300px;
+		padding: 50px;
+		grid-column: 1/-1;
+      grid-row: 1;
+      text-align: center;
+      text-shadow: #ffffff 1px 0 10px;
+      margin-top: 100px;
+	}
+	 .knapper {
+		grid-column: 1/-1;
+		grid-row: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 10px;
+		margin: 20px;
+    }
+	.pil_boks{
+		display: flex;
+		justify-content: center;
+		grid-column: 1/-1;
+      grid-row: 1;
+      text-align: center;
+      text-shadow: #ffffff 1px 0 10px;
+      margin-top: 100px;
+	}
+	.pil{
+		width: 40px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		transition: transform .2s; 
+	}
+	.pil:hover {
+		animation: pulse 0.7s infinite ease-in-out alternate;
+	}
+	@keyframes pulse {
+		from { transform: scale(0.9); }
+		to { transform: scale(1.1); }
+	}
+
+/*Section 2*/
+	.section2{
+		margin: 25px;
+	}
+	h2{
+		font-size: 20px;
+		font-family: "Montaga", serif;
+		font-weight: lighter;
+		margin-bottom: 10px;
+
+	}
+	.underoverskrift{
+		font-weight: bolder;
+		margin-bottom: 15px;
+
+	}
+	p{
+		font-family: "Mulish", sans-serif;
+  		line-height: 35px;
+  		font-size: 15px;	
+		font-weight: lighter;
+}
+
 </style>
