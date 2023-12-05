@@ -1,12 +1,26 @@
 ---
 import '../styles/global.css';
 import MainLayout from "../layouts/MainLayout.astro";
-
+import Knap from "../components/Knap.astro"
 
 ---
 
 <MainLayout>
+<section>
+<div>
+	<img src="" alt="forsidebillede">
+	<img src="" alt="logo">
+</div>
+<div>
+    <Knap variant="primary" link="/menu">Menu</Knap>
+	<Knap variant="primary" link="/bestilbord">Bestil bord</Knap>
+    <Knap variant="primary" link="/omos">Om os</Knap>
+</div>
+<div>
+	<img src="" alt="pil">
+</div>
 
+</section>
 
 </MainLayout>
 
