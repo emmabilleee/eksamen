@@ -1,6 +1,6 @@
 <header>
   <div>
-    <a href="/"><img id="logo" src="/img/logo_hjem_hvid.svg" alt="logo" /></a>
+    <a href="/"><img id="logo" src="/img/logo_hjem_sort.svg" alt="logo" /></a>
   </div>
   <nav>
     <ul class="menu">
@@ -20,31 +20,28 @@
 <style>
 
   header {
-    display: flex;
+	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: white;
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 40px;
 	font-family: 'Montaga', serif; 
-	z-index: 99;
 
   }
 
   nav {
     display: flex;
     align-items: center;
+		overflow: visible;
+
   }
 
   .menu {
-    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+   
   }
 
   .menu li {
@@ -94,7 +91,7 @@
   }
 
   #logo  {
-    max-width: 120px; /* logo's størrelse */
+    width: 60px; 
   }
   
   @media screen and (max-width: 800px) {
@@ -136,20 +133,17 @@
   }
   @media (min-width: 800px) {
     header {
-      top: 0;
-      padding: 1rem 2rem;
+         top: 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
 
     }
 
     #logo {
-      width: 170px;
+      width: 120px;
       height: auto;
       align-self: center;
-      display: inline;
-      margin: 0;
+     
 
     }
 
@@ -160,7 +154,6 @@
       margin: 0;
       padding: 0;
       gap: 40px;
-      overflow-x: none;
     }
     li a {
       text-decoration: none;
