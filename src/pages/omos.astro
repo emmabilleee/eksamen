@@ -15,7 +15,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 </section>
 <section class="section_2">
-<div>
+<div class="brødtekst">
 <p>Restaurant 1971 er en del af Frederik VI på Frederiksberg Alle 42A, og betragtes som en søsterfilial til vores yderst velbesøgte “Frederik VI Ølbar & Spisested”.
 Det er vores ambition at drive 1971 som et kvalificeret alternativ, med mere fokus på 
 madoplevelsen. Hertil fokus på vine. Der er nu også en bar på Restauranten, hvor vi serverer øl fra de lokale bryggerier:
@@ -67,12 +67,8 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
 </MainLayout>
 
 <style>
+    	/*Mobile*/
         /* ....Section 1........ */
-     
-    .forsidebillede {
-        object-fit: cover;
-        height: 50%;
-    }
     .menu_billede {
     position: relative; 
 }
@@ -85,6 +81,13 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
     color: white; 
      
      }
+     /* Section 1 */
+
+.forsidebillede {
+    width: 100%;
+    object-fit: cover;
+    
+}
    
      header {
         color: green;
@@ -115,7 +118,22 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
   .SoMe_image {
     width: 10%;
     display: row;
-   
   }
+  @media screen and (min-width: 1200px){
+    .section_2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+        margin: 50px auto; 
+        max-width: 1200px; 
+        padding: 0 20px; 
+    }
+    .forsidebillede {
+    width: 100%;
+    object-fit: cover;
+    
+}
+  }
+
  
 </style>
