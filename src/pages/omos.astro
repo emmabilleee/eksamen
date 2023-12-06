@@ -13,6 +13,56 @@ import MainLayout from "../layouts/MainLayout.astro";
 	</div>
 </section>
 
+<section class="section_2">
+<div>
+<p>Restaurant 1971 er en del af Frederik VI på Frederiksberg Alle 42A, og betragtes som en søsterfilial til vores yderst velbesøgte “Frederik VI Ølbar & Spisested”.
+Det er vores ambition at drive 1971 som et kvalificeret alternativ, med mere fokus på 
+madoplevelsen. Hertil fokus på vine. Der er nu også en bar på Restauranten, hvor vi serverer øl fra de lokale bryggerier:
+Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks.</p>
+<p>Ann-Christin Rudy og Jimmy Streit</p>
+<img src="/img/forside_placeholder.jpeg" alt="billede">
+</div>
+<div>
+    <div class="åbningstider">
+        <div>
+            <ul>
+                <li class="fedtekst">Åbningstider:</li>
+                <li>Alle dage kl 11.00 </li>
+                <li>Frokost: 11.30 - 16.00 </li>
+                <li> Aften: 17.30 - 21.00 </li>
+                <li> 17.30 - 21.30 fre og lør)</li>
+            </ul>
+            <ul>
+                <li>Baren er åben 11:00 til 24:00 (senest)</li>
+                <li>Baren lukker senest kl 24:00</li>
+            </ul>
+            <ul>
+                <li class="fedtekst">Adresse:</li>
+                <li>H.C. Ørsteds Vej 28A</li>
+                <li>1879 Frederiksberg C </li>
+            </ul>
+            <ul>
+                <li class="fedtekst">Kontakt:</li>
+                <li>+45 53 53 19 71</li>
+                <li>booking@1971frokost.dk</li>
+            </ul>
+        </div>
+        <div>
+            <p class="fedtekst">Følg os på Instagram, Facebook & LinkedIn</p>
+            <div class="grid_SoMe">
+<img class="SoMe_image" src="/img/omos_instagram.svg" alt="instagram">
+<img  class="SoMe_image" src="/img/omos_facebook.svg" alt="facebook">
+<img class="SoMe_image" src="/img/omos_linkedin.svg" alt="linkedin">
+            </div>
+        </div>
+
+            
+        </div>
+ 
+    </div>
+</div>
+</section>
+
 </MainLayout>
 
 <style>
@@ -28,8 +78,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       grid-row: 1/-1;
       z-index: -1;
       object-fit: cover;
-       width: auto;
-        height: 900px; 
+    
     }
      .forside_h1 {
     width: 300px;
@@ -38,6 +87,33 @@ import MainLayout from "../layouts/MainLayout.astro";
       grid-row: 1;
       text-align: center;
   color: white;
-      margin-top: 45px;
+      margin-top: 200px;
      }
+     /* Section 2... */
+     .section_2{
+		margin: 50px;
+		margin-top: 215px;
+	}
+    p{
+        margin-bottom: 30px;
+         font-family: "Mulish", sans-serif;
+  line-height: 30px;
+  font-size: 15px;
+    }
+      ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+     font-family: "Mulish", sans-serif;
+  line-height: 30px;
+  font-size: 15px;
+  }
+  .fedtekst{
+    color: black;
+    font-weight: bolder;
+  }
+  .SoMe_image {
+    width: 10%;
+    display: row;
+   
+  }
 </style>
