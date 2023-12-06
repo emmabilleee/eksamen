@@ -6,10 +6,38 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-
+<section class="section_1">
+    <div class="menu_billede">
+		<img src="/img/1971.png" alt="forsidebillede" class="forsidebillede">
+		<h1 class="forside_h1">Om os</h1>
+	</div>
+</section>
 
 </MainLayout>
 
 <style>
-	
+    /* ....Section 1........ */
+	.menu_billede{
+		display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0px 100px;
+      align-items: center;
+	}
+    .forsidebillede {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      z-index: -1;
+      object-fit: cover;
+       width: auto;
+        height: 900px; 
+    }
+     .forside_h1 {
+    width: 300px;
+	padding: 130px;
+	grid-column: 1/-1;
+      grid-row: 1;
+      text-align: center;
+  color: white;
+      margin-top: 45px;
+     }
 </style>
