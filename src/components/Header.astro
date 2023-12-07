@@ -1,3 +1,6 @@
+---
+const {variant} = Astro.props;
+---
 <header class="forside">
   <div>
     <a href="/"><img id="logo" src="/img/logo_hjem_hvid.svg" alt="logo" /></a>
@@ -19,13 +22,11 @@
 </header>
 <style>
 
-.forside a {
-  color: white;
+.primary{
+	color: white;
 }
-
-/* Stilarter specifikke for de andre sider */
-header:not(.forside) {
-  color: black;
+.secondary{
+	color: black;
 }
   header {
 	display: flex;

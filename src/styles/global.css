@@ -6,6 +6,9 @@ img {
   width: 100%;
   aspect-ratio: auto;
 }
+body {
+  scroll-behavior: smooth;
+}
 
 /*********Mobil*********/
 h1 {
