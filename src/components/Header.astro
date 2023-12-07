@@ -1,4 +1,4 @@
-<header>
+<header class="forside">
   <div>
     <a href="/"><img id="logo" src="/img/logo_hjem_hvid.svg" alt="logo" /></a>
   </div>
@@ -19,6 +19,14 @@
 </header>
 <style>
 
+.forside a {
+  color: white;
+}
+
+/* Stilarter specifikke for de andre sider */
+header:not(.forside) {
+  color: black;
+}
   header {
 	display: flex;
     justify-content: space-between;
@@ -86,7 +94,6 @@
     font-weight: 100;
     font-size: 1rem;
     padding: 10px 9px 10px 9px;
-	background-color: white;
   }
 
   #logo  {
@@ -156,7 +163,7 @@
     }
     li a {
       text-decoration: none;
-      color: black;
+      color: white;
       font-weight: 100;
       font-style: normal;
       font-size: 1rem;
