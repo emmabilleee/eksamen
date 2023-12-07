@@ -11,8 +11,57 @@ import Formular from '../components/Formular.astro';
     </header>
 <MainLayout>
 
+    <section class="selskaber">
+<div>
+    <h3>Selskaber hos Frokostrestauranten 1971</h3>
+    <hr>
+    <p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig mærkedag i hyggelige omgivelser centralt på Frederiksberg. Vi modtager dags- og aftenarrangementer på op til 50 personer.
+    Vi tilbyder forskellige selskabsmenuer, men tager en personlig snak om jeres ønsker. 
+    Kontakt os på tlf. +45 5353 1971 eller udfyld formularen til højre, og vi vender tilbage hurtigst muligt.
+    </p>
+</div>
+
+    <div>
+        <Formular/> 
+    </div>
+
+    </section>
 </MainLayout>
 
 <style>
-	
+    p {
+       font-family: "Mulish", sans-serif;
+       line-height: 30px;
+       font-size: 15px;
+       margin-left: 20px;
+       margin-top: 20px;
+    }
+
+h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+    hr {
+    width: 90%;
+    margin-left: 20px;
+    color: #43594B;
+}
+
+@media screen and (min-width: 1200px) {
+        .selskaber {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+        margin: 50px auto; 
+        max-width: 1200px; 
+        padding: 0 20px; 
+        }
+
+    h3 {
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+}
+}
 </style>
