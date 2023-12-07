@@ -6,10 +6,86 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
+    <section class="grid_book_bord">
+    <section class="margin">
+   <section>
+<h1 class="bestil_bord">Bestil Bord</h1>
+<p class="valg_gaster">Vælg antal gæster</p>
+</section>
 
-
+ <section class="margin">
+<p class="fed">Velkommen til online booking 
+for Restaurant 1971 </p>
+<p>Reservationen er gennemført, når du har modtaget en bekræftelse pr. mail fra os.</p>
+<p>
+Reserveres der bord med ankomst  før kl. 20.00,gør
+vi opmærksomme på, at bordet er jeres i 2 timer og 30 minutter som udgangspunkt.</p>
+<p>
+Ved valg af "Quick bord" har i bordet i 1 time og 30 minutter, med mindre vi ikke skal bruge bordet igen.</p>
+<p>
+For reservationer af selskaber på over 8 personer, skal der rettes henvendelse på info@restaurant1971.dk</p>
+<p>
+Vi glæder os til at byde jer indenfor til en god aften.</p>
+</section>
+</section>
+<section>
+<img src="https://picsum.photos/seed/picsum/400/300" alt=""></section>
 </MainLayout>
-
+</section>
 <style>
-	
+	.bestil_bord {
+        text-align: center;
+        font-size: 50px;
+        color: #43594B;
+    } 
+    p {
+        font-family: "Mulish", sans-serif;
+  		line-height: 30px;
+  		font-size: 15px;	
+		font-weight: lighter;
+        margin: 0px 0px 20px 0px;
+    }
+    .fed {
+        font-weight: bolder;
+    }
+.margin {
+		margin: 25px;
+		margin-top: 50px;
+	}
+
+    .section1 {
+        text-align: center;
+    }
+
+    .valg_gaster {
+        font-size: 20px;
+        color: #43594B;
+        text-align: center;
+    }
+
+@media screen and (min-width: 1200px) {
+.grid_book_bord {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.margin {
+		margin: 40px;
+		margin-top: 50px;
+	}
+    p {
+  		line-height: 30px;
+  		font-size: 15px;	
+		font-weight: lighter;
+        margin: 0px 0px 20px 0px;
+    }
+    img {
+        z-index: 99;
+         position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+    }
+}
+   
 </style>

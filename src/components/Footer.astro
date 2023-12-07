@@ -3,9 +3,9 @@
         <div class="kontakt">
             <h2>Kontakt os</h2>
             <div class="grid_footer">
-                <p>Tel: 53 53 19 71</p>
-                <p>booking@1971frokost.dk</p>
-                <a href="/bestilbord.html">Bestil bord her</a>
+                <p class="margin">Tel: 53 53 19 71</p>
+                <p class="margin">booking@1971frokost.dk</p>
+                <a class="margin" href="/bestilbord.html">Bestil bord her</a>
             </div>
             <a href="https://maps.app.goo.gl/MeXXWwupvQMTeAKB8">H.C. Ørsteds Vej 28A, 1879 Frederiksberg C</a>
         </div>
@@ -24,7 +24,7 @@
                 <a href="https://www.facebook.com/frokostrestauranten1971/"><img src="/img/facebook.svg" alt="facebook" class="icon"></a>
                 <a href="https://www.linkedin.com/feed/"><img src="/img/linkedin.svg" alt="linkedin" class="icon"></a>
             </div>
-            <div>
+            <div class="footer_logo">
                 <img src="/img/logo_stor_hvid.svg" alt="logo">
             </div>
         </div>
@@ -102,6 +102,10 @@
     p{
         font-size:12px;
     }
+    .margin {
+        margin: 0;
+        padding-top: 20px;
+    }
     a{
         font-size:12px   
     }   
@@ -110,13 +114,14 @@
         margin-bottom:0px;
     }
     .grid_footer2{
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 20px;
         margin-top: 70px;
-        align-items: baseline;
+    }
+    .footer_logo {
+        text-align: right;
     }
     img{
         margin-bottom:-30px;
