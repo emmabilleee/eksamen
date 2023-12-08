@@ -1,0 +1,41 @@
+---
+const { variant, link } = Astro.props;
+---
+
+<a class={variant} href={link}><slot /></a>
+
+<style>
+  .primary {
+    background-color: #000026;
+    color: white;
+    font-family: "Signika", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 30px 90px;
+    border: solid 1px white;
+    box-shadow: 0 0 20px 10px white;
+  }
+  .primary:hover{
+    background-color: white;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .secondary {
+    background-color: black;
+    color: white;
+    font-family: "Signika", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 15px 20px;
+    border: solid 1px #7D65D0;
+    box-shadow: 0 0 20px 10px #7D65D0;
+   
+  }
+
+
+</style>
+
+      <!-- @media screen and (min-width: 1200px) -->
