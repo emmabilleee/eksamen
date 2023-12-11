@@ -10,38 +10,45 @@ import Header from "../components/Header.astro";
     </header>
 <MainLayout>
     <section class="grid_book_bord">
-    <section class="margin">
-   <section>
-<h1 class="bestil_bord">Bestil Bord</h1>
-<p class="valg_gaster">Vælg antal gæster</p>
-<div class="guest-counter">
-          <button id="decrement">-</button>
-          <span id="guestCount">1</span>
-          <button id="increment">+</button>
-        </div>
-    <div class="center"> <button id="naste_knap">Næste</button></div>
-    <hr>
+        <section class="margin">
+            <section>
+                <a href="/">  <img src="/img/bestilbord_pil.svg" alt="pil" class="pil"></a>
+              <h1 class="bestil_bord">Bestil Bord</h1>
+               <p class="valg_gaster">Vælg antal gæster</p>
+                <div class="guest-counter">
+                    <button id="decrement">-</button>
+                    <span id="guestCount">1</span>
+                     <button id="increment">+</button>
+                </div>
+                <div class="center"> <button id="naste_knap">Næste</button></div>
+                 <hr>
+             </section>
+
+        <section class="margin">
+            <p class="fed">Velkommen til online booking for Restaurant 1971 </p>
+            <p>Reservationen er gennemført, når du har modtaget en bekræftelse pr. mail fra os.</p>
+            <p>
+            Reserveres der bord med ankomst  før kl. 20.00, gør vi opmærksomme på, at bordet er jeres i 2 timer og 30 minutter som udgangspunkt.</p>
+            <p>
+            Ved valg af "Quick bord" har i bordet i 1 time og 30 minutter, med mindre vi ikke skal bruge bordet igen.</p>
+            <p>
+            For reservationer af selskaber på over 8 personer, skal der rettes henvendelse på info@restaurant1971.dk</p>
+            <p>
+            Vi glæder os til at byde jer indenfor til en god aften!</p>
+         </section>
 </section>
 
- <section class="margin">
-<p class="fed">Velkommen til online booking for Restaurant 1971 </p>
-<p>Reservationen er gennemført, når du har modtaget en bekræftelse pr. mail fra os.</p>
-<p>
-Reserveres der bord med ankomst  før kl. 20.00, gør vi opmærksomme på, at bordet er jeres i 2 timer og 30 minutter som udgangspunkt.</p>
-<p>
-Ved valg af "Quick bord" har i bordet i 1 time og 30 minutter, med mindre vi ikke skal bruge bordet igen.</p>
-<p>
-For reservationer af selskaber på over 8 personer, skal der rettes henvendelse på info@restaurant1971.dk</p>
-<p>
-Vi glæder os til at byde jer indenfor til en god aften!</p>
-</section>
-</section>
 <section>
-<img src="/img/retsaurant_singleshot.webp" alt="bestilbord_billede"></section>
-</MainLayout>
+    <img src="/img/retsaurant_singleshot.webp" alt="bestilbord_billede"></section>
 </section>
+</MainLayout>
+
 <style>
     /*Mobile*/
+    .pil{
+        width: 10%;
+        margin:0px;
+    }
 	.bestil_bord {
         text-align: center;
         font-size: 50px;
@@ -114,6 +121,12 @@ Vi glæder os til at byde jer indenfor til en god aften!</p>
 
     /*Web*/
 @media screen and (min-width: 1200px) {
+    .pil{
+       width: 3%;
+    margin: 0px;
+    top: -48%;
+    left: 3%;
+    }
     .grid_book_bord {
         display: grid;
         grid-template-columns: 1fr 1fr;
