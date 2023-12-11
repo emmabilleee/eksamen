@@ -38,9 +38,9 @@ import HeaderMain from "../components/Headermain.astro"
 				madoplevelsen. Hertil fokus på vine. Der er nu også en bar på 
 				Restauranten, hvor vi serverer øl fra de lokale bryggerier: 
 				Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin 
-				på glas + snacks.
+				på glas + snacks.</p>
 			<br/>
-			<br/>
+			<p class="navne">
 				Ann-Christin Rudy og Jimmy Streit</p>
 			</div>
 			<div class="img_column">
@@ -50,15 +50,17 @@ import HeaderMain from "../components/Headermain.astro"
 
 		<div class="grid_2">
 			<div class="img_column2">
-				<img src="/img/retsaurant_singleshot.webp" alt="selskabbillede" class="selskabsbillede">
+				<img src="/img/selskaber.webp" alt="selskabbillede" class="selskabsbillede">
 			</div>
 			<div class="text_column2">
 				<h2>Selskaber hos restaurant 1971</h2>
 				<p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig 
-				mærkedag i hyggelige omgivelser centralt på Frederiksberg. 
-				Vi modtager dags- og aftenarrangementer på op til 50 personer.
+				mærkedag i hyggelige omgivelser centralt på Frederiksberg. <br/>
+				Vi modtager dags- og aftenarrangementer på op til 50 personer.<br/>
 				Vi tilbyder forskellige selskabsmenuer, men tager en 
 				personlig snak om jeres ønsker. 
+				<br/>
+				Kontakt os på tlf. +45 5353 1971, og vi vender tilbage hurtigst muligt.
 				</p>
 			</div>
 		</div>
@@ -137,7 +139,7 @@ import HeaderMain from "../components/Headermain.astro"
 		margin-top: 50px;
 	}
 	h2{
-		font-size: 20px;
+		font-size: 25px;
 		font-family: "Montaga", serif;
 		font-weight: lighter;
 		margin-bottom: 10px;
@@ -150,21 +152,23 @@ import HeaderMain from "../components/Headermain.astro"
 	}
 	p{
 		font-family: "Mulish", sans-serif;
-  		line-height: 37px;
+  		line-height: 40px;
   		font-size: 15px;	
 		font-weight: lighter;
 }
+.navne{
+	font-style: italic;
+}
 	.madbillede{
 		height: auto;
-		width: 100%;
+		width: 450px;
 	}
-	.selskabbillede{
+	.selskabsbillede{
 		height: auto;
-		width: 120%;
-		aspect-ratio: 4/3;
+		width: 450px;
 	}
 	.grid_1{
-		margin: 50px 20px;
+		margin: 40px 20px;
 
 	}
 	.grid_2{
@@ -230,9 +234,9 @@ import HeaderMain from "../components/Headermain.astro"
 	.grid_1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 70px;
-		max-width: 1100px; 
-  		margin: 120px auto;
+		gap: 10px;
+		max-width: 1050px; 
+  		margin: 150px auto;
 	}
 	.grid_2{
 		display: grid;

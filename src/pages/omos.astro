@@ -23,7 +23,7 @@ import Header from "../components/Header.astro";
 Det er vores ambition at drive 1971 som et kvalificeret alternativ, med mere fokus på 
 madoplevelsen. Hertil fokus på vine. Der er nu også en bar på Restauranten, hvor vi serverer øl fra de lokale bryggerier:
 Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks.</p>
-<p>Ann-Christin Rudy og Jimmy Streit</p>
+<p class="navne">Ann-Christin Rudy og Jimmy Streit</p>
 <img src="/img/menu.webp" alt="billede">
 </div>
 <div>
@@ -73,22 +73,22 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
     	/*Mobile*/
         /* ....Section 1........ */
     .menu_billede {
-    position: relative; 
+        position: relative; 
 }
     .forside_h1 {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 1;
-    color: white; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1;
+        color: white; 
      
      }
-     /* Section 1 */
 
-.forsidebillede {
-    width: 100%;
-    object-fit: cover;
+     /* Section 1 */
+    .forsidebillede {
+        width: 100%;
+        object-fit: cover;
     
 }
    
@@ -103,37 +103,42 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
 	}
     p{
         margin-bottom: 30px;
-         font-family: "Mulish", sans-serif;
-  line-height: 30px;
-  font-size: 15px;
+        font-family: "Mulish", sans-serif;
+        line-height: 30px;
+        font-size: 15px;
     }
-      ul {
-    list-style-type: none;
-    margin-bottom: 20px;
-     font-family: "Mulish", sans-serif;
-  line-height: 30px;
-  font-size: 15px;
+    .navne{
+        font-style: italic;
+    }
+    ul {
+        list-style-type: none;
+        margin-bottom: 20px;
+        font-family: "Mulish", sans-serif;
+        line-height: 30px;
+        font-size: 15px;
   }
-  .fedtekst{
-    color: black;
-    font-weight: bolder;
-  }
-  .SoMe_image {
-    width: 10%;
-    display: row;
-  }
+    .fedtekst{
+        color: black;
+        font-weight: bolder;
+    }
+    .SoMe_image {
+        width: 10%;
+        display: row;
+    }
+
+    /*Web*/
   @media screen and (min-width: 1200px){
     .section_2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 200px;
         margin: 50px auto; 
-        max-width: 1200px; 
+        max-width: 1050px; 
         padding: 0 20px; 
     }
     .forsidebillede {
-    width: 100%;
-    object-fit: cover;
+        width: 100%;
+        object-fit: cover;
     
 }
   }
