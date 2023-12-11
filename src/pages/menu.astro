@@ -11,8 +11,8 @@ import Knap from '../components/Knap.astro';
         <Header/>
     </header>
 <MainLayout>
-    <Banner header="Menu" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej">
+      <Banner header="Menu" >
+	<img src="/img/menubanner.webp" alt="hej" class="banner">
 </Banner>
 	<section class="grid_knapper">
 			<Knap variant="primary" link="/menu">Frokost</Knap>
@@ -146,6 +146,10 @@ Fredag & Lørdag: 17.30-21.30  </p>
 </MainLayout>
 
 <style>
+    .banner{
+       filter: brightness(50%);
+       z-index: -99;
+    }
     .grid_knapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
