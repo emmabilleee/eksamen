@@ -11,10 +11,13 @@ import Banner from '../components/Banner.astro';
     </header>
 <MainLayout>
     <Banner header="Menu" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej">
+	<img src="/img/menubanner.webp" alt="hej" class="banner">
 </Banner>
 </MainLayout>
 
 <style>
-	
+	.banner{
+       filter: brightness(50%);
+       z-index: -99;
+    }
 </style>
