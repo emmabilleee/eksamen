@@ -1,12 +1,22 @@
 ---
 import '../styles/global.css';
-import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/Header.astro";
+import MainLayout from '../layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
 import Banner from '../components/Banner.astro';
 import Knap from '../components/Knap.astro';
-
-
+import Menu from '../components/Menu.astro';
+const data = await fetch(
+    "https://upjnpiumxgyurfdoovar.supabase.co/rest/v1/menu",
+{
+    method:"GET",
+    headers: {
+        apikey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVwam5waXVteGd5dXJmZG9vdmFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDIyOTM4MzgsImV4cCI6MjAxNzg2OTgzOH0.wJkSpZHK8VGP9Md2Hj8xgw_eW9KEO_lkFkO0XyHzBz0"    
+    },
+}
+).then((res) => res.json());
+console.log("DATA",data);
 ---
+          
  <header>
         <Header/>
     </header>
@@ -20,7 +30,20 @@ import Knap from '../components/Knap.astro';
 			<Knap variant="primary" link="/omos">Drikkevarer</Knap>
             <Knap variant="primary" link="/omos">Julen 2023</Knap>
     </section>
-    <div class="grid_1">
+
+<section class="menuer">
+    {data.forEach(menu=>{
+        return <Menu />
+    })}
+
+</section>
+
+
+
+
+
+
+    <!-- <div class="grid_1">
 <h2>Aften</h2>
 <p class="abningstider">Søndag til Torsdag: 17.30-21.00 <br>
 Fredag & Lørdag: 17.30-21.30  </p>
@@ -142,7 +165,7 @@ Fredag & Lørdag: 17.30-21.30  </p>
     </article>
 
     </section>
-    </section>
+    </section> -->
 </MainLayout>
 
 <style>
