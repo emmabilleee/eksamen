@@ -11,7 +11,7 @@ import Banner  from '../components/Banner.astro';
     
 <section class="section_1">
        <Banner header="Om os" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej" class="forsidebillede">
+	<img src="/img/menubanner.webp" alt="hej" class="banner">
 </Banner>
 </section>
 
@@ -83,6 +83,10 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
         color: white; 
      
      }
+     .banner{
+       filter: brightness(50%);
+       z-index: -99;
+    }
 
      /* Section 1 */
     .forsidebillede {

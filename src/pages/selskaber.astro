@@ -12,8 +12,8 @@ import Knap from "../components/Knap.astro"
     </header>
 <MainLayout>
     <section>
-           <Banner header="Selskaber" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej" class="forsidebillede">
+	 <Banner header="Selskaber" >
+	<img src="/img/menubanner.webp" alt="hej" class="banner">
 </Banner>
     </section>
 
@@ -60,6 +60,10 @@ import Knap from "../components/Knap.astro"
     .knap {
         margin-left: 42.5%;
         margin-bottom: 20%;
+    }
+    .banner{
+       filter: brightness(50%);
+       z-index: -99;
     }
 
 @media screen and (min-width: 1200px) {
