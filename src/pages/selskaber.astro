@@ -24,7 +24,9 @@ import Knap from "../components/Knap.astro"
 
     <div>
         <Formular/> 
+        <div class="knap">
         <Knap variant="primary" link="">Send</Knap>
+        </div>
     </div>
 
     </section>
@@ -39,17 +41,21 @@ import Knap from "../components/Knap.astro"
        margin-top: 20px;
     }
 
-h3 {
-  font-family: "Yeseva One", serif;
-  font-size: 18px;
-  text-align: center;
+    h3 {
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    text-align: center;
 }
 
     hr {
     width: 90%;
     margin-left: 20px;
     color: #43594B;
-}
+    }
+    .knap {
+    margin-left: 42.5%;
+    margin-bottom: 20%;
+    }
 
 @media screen and (min-width: 1200px) {
         .selskaber {
@@ -64,6 +70,10 @@ h3 {
     h3 {
     font-family: "Yeseva One", serif;
     font-size: 18px;
+}
+
+.knap{
+    margin-left: 45%;
 }
 }
 </style>
