@@ -3,7 +3,6 @@ import '../styles/global.css';
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Banner from '../components/Banner.astro';
-import Knap from '../components/Knap.astro';
 
 
 ---
@@ -14,12 +13,6 @@ import Knap from '../components/Knap.astro';
     <Banner header="Menu" >
 	<img src="https://picsum.photos/id/65/400/150" alt="hej">
 </Banner>
-	<div class="knapper">
-			<Knap variant="primary" link="/menu">Frokost</Knap>
-			<Knap variant="primary" link="/bestilbord">Aften</Knap>
-			<Knap variant="primary" link="/omos">Drikkevarer</Knap>
-            <Knap variant="primary" link="/omos">Julen 2023</Knap>
-		</div>
 </MainLayout>
 
 <style>
