@@ -1,0 +1,15 @@
+---
+const {data} = Astro.props;
+console.log(data); 
+---
+
+<article>
+    <h2>{data.kategori}</h2>
+    <p class="abningstider">{data.kategoritekst}</p>
+
+     <h3>{data.overskrift}</h3>
+    <p>{data.madnavn}</p>
+    <p>{data.madtekst}</p>
+</article>
+
+
