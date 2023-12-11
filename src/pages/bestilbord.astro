@@ -41,6 +41,7 @@ Vi glæder os til at byde jer indenfor til en god aften!</p>
 </MainLayout>
 </section>
 <style>
+    /*Mobile*/
 	.bestil_bord {
         text-align: center;
         font-size: 50px;
@@ -57,7 +58,7 @@ Vi glæder os til at byde jer indenfor til en god aften!</p>
         font-weight: bold;
         margin-bottom: 0;
     }
-.margin {
+    .margin {
 		margin: 25px;
 		margin-top: 50px;
 	}
@@ -73,49 +74,51 @@ Vi glæder os til at byde jer indenfor til en god aften!</p>
         margin-bottom: 5px;
         margin-top: 20px;
     }
-.guest-counter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 200px;
-    margin: 0 auto;
-    background-color: lightgray;
-    border-radius: 30px;
-  }
+    .guest-counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        margin: 0 auto;
+        background-color: lightgray;
+        border-radius: 30px;
+    }
 
-  .guest-counter button {
-    background-color: #43594B;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 20px;
-    cursor: pointer;
-  }
+    .guest-counter button {
+        background-color: #43594B;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
 
-  #guestCount {
-    font-size: 18px;
-    font-family: "Mulish", sans-serif;
-  }
-#naste_knap {
-     background-color: lightgray;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 40px;
-    cursor: pointer;
-}
-.center {
-    text-align: center;
-margin-top: 20px;
-}
-hr {
-    margin-top: 20px;
-}
+    #guestCount {
+        font-size: 18px;
+        font-family: "Mulish", sans-serif;
+    }
+    #naste_knap {
+        background-color: lightgray;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 40px;
+        cursor: pointer;
+    }
+    .center {
+        text-align: center;
+        margin-top: 20px;
+    }
+    hr {
+        margin-top: 20px;
+    }
+
+    /*Web*/
 @media screen and (min-width: 1200px) {
-.grid_book_bord {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.margin {
+    .grid_book_bord {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .margin {
 		margin: 40px;
 		margin-top: 50px;
 	}
@@ -127,13 +130,12 @@ hr {
     }
     img {
         z-index: 99;
-         position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 119%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 119%;
     }
-
 }
    
 </style>
