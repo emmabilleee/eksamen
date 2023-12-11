@@ -11,7 +11,7 @@ import Banner  from '../components/Banner.astro';
     
 <section class="section_1">
        <Banner header="Om os" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej" class="forsidebillede">
+	<img src="/img/omos.jpeg" alt="hej" class="banner">
 </Banner>
 </section>
 
@@ -23,7 +23,7 @@ Det er vores ambition at drive 1971 som et kvalificeret alternativ, med mere fok
 madoplevelsen. Hertil fokus på vine. Der er nu også en bar på Restauranten, hvor vi serverer øl fra de lokale bryggerier:
 Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks.</p>
 <p class="navne">Ann-Christin Rudy og Jimmy Streit</p>
-<img src="/img/logo_øl.webp" alt="billede" class="omos_billede">
+<img src="/img/menuer2.JPG" alt="billede" class="omos_billede">
 </div>
 <div>
     <div class="åbningstider">
@@ -83,6 +83,10 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
         color: white; 
      
      }
+     .banner{
+       filter: brightness(50%);
+       z-index: -99;
+    }
 
      /* Section 1 */
     .forsidebillede {
@@ -110,6 +114,7 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
     }
     .omos_billede{
         width: 600px;
+        aspect-ratio: 16/9;
     }
     ul {
         list-style-type: none;

@@ -12,14 +12,14 @@ import Knap from "../components/Knap.astro"
     </header>
 <MainLayout>
     <section>
-           <Banner header="Selskaber" >
-	<img src="https://picsum.photos/id/65/400/150" alt="hej" class="forsidebillede">
+	 <Banner header="Selskaber" >
+	<img src="/img/selskaber.jpeg" alt="hej" class="banner">
 </Banner>
     </section>
 
     <section class="selskaber">
 <div>
-    <h3>Selskaber hos Frokostrestauranten 1971</h3>
+    <h2>Selskaber hos Frokostrestauranten 1971</h2>
     <hr>
     <p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig mærkedag i hyggelige omgivelser centralt på Frederiksberg. Vi modtager dags- og aftenarrangementer på op til 50 personer.
     Vi tilbyder forskellige selskabsmenuer, men tager en personlig snak om jeres ønsker. 
@@ -35,6 +35,9 @@ import Knap from "../components/Knap.astro"
     </div>
 
     </section>
+    <section>
+        <img src="/img/selskaber2.webp" alt="selskaber" class="selskaber_billede">
+    </section>
 </MainLayout>
 
 <style>
@@ -42,32 +45,35 @@ import Knap from "../components/Knap.astro"
        font-family: "Mulish", sans-serif;
        line-height: 30px;
        font-size: 15px;
-       margin-left: 20px;
        margin-top: 20px;
     }
 
-    h3 {
-        font-family: "Yeseva One", serif;
-        font-size: 18px;
-        text-align: center;
+    h2 {
+        font-family: "Mulish", serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: lighter;
 }
 
     hr {
         width: 90%;
-        margin-left: 20px;
         color: #43594B;
     }
     .knap {
         margin-left: 42.5%;
         margin-bottom: 20%;
     }
+    .banner{
+       filter: brightness(50%);
+       z-index: -99;
+    }
 
 @media screen and (min-width: 1200px) {
     .selskaber {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 200px;
-        margin: 50px auto; 
+        gap: 100px;
+        margin: 20px auto; 
         max-width: 1200px; 
         padding: 0 20px; 
         }
@@ -78,6 +84,9 @@ import Knap from "../components/Knap.astro"
 }
     .knap{
         margin-left: 45%;
+}
+.selskaber_billede{
+    margin-bottom: -10px;
 }
 }
 </style>
