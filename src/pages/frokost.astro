@@ -34,65 +34,90 @@ console.log("DjjATA",data);
             <Knap variant="third" link="/jul">Julen 2023</Knap>
 
     </section>
-    <section>
-        <h2 class="madnavn">{data.overskrift}</h2>
-
-    </section>
+   
     <section class="menu">
-<!-- {data.map(show=>{
-        return <Menu data={show} />;
-})} -->
-<h2>Frokost</h2>
-<p>Serveres dagligt kl. 11:30-16:00</p>
+    <div class="overskrift_del">
+        <h2>Frokost</h2>
+        <p>Serveres dagligt <br>kl. 11:30-16:00</p>
+    </div>
+    </section>
+
+<section class="grid_1-1-1">
+    <div class="grid_1">
 <h3>Anretninger</h3>
+<p>Inklusiv brød, smør og fedt</p>
+
 {data.map(show=>{
-    if (show.overskrift==="Anretning") {
+    if (show.overskrift==="Anretninger") {
 return <Menu data={show}/> 
     }
 })
 }
-<h2>Sild</h2>
+    </div>
+
+      <div class="grid_1">
+  
+<h3>Sild</h3>
+<p>Sild lavet på islandske gammeldags modnede sild</p>
 {data.map(show=>{
     if (show.overskrift==="Sild") {
 return <Menu data={show}/> 
     }
 })
 }
-<h2>Fisk</h2>
+    </div>
+
+    <div class="grid_1">
+<h3>Fisk</h3>
 {data.map(show=>{
     if (show.overskrift==="Fisk") {
 return <Menu data={show}/> 
     }
 })
 }
-<h2>Klassiske danske retter & tatar</h2>
+    </div>
+
+    <div class="grid_1">
+<h3>Klassiske danske retter & tatar</h3>
 {data.map(show=>{
-    if (show.overskrift==="Klassiske danske retter & tatar") {
+    if (show.overskrift==="Klassiske danske retter & Tatar") {
 return <Menu data={show}/> 
     }
 })
 }
-<h2>Det grønne / veganske alternativer</h2>
+    </div>
+
+    <div class="grid_1">
+<h3>Det grønne / veganske alternativer</h3>
 {data.map(show=>{
     if (show.overskrift==="Det grønne / veganske alternativer") {
 return <Menu data={show}/> 
     }
 })
 } 
-<h2>Ost</h2>
+    </div>
+
+    <div class="grid_1">
+<h3>Ost</h3>
 {data.map(show=>{
     if (show.overskrift==="Ost") {
 return <Menu data={show}/> 
     }
 })
 }   
-<h2>Sødt</h2>
+    </div>
+
+    <div class="grid_1">
+<h3>Sødt</h3>
 {data.map(show=>{
     if (show.overskrift==="Sødt") {
 return <Menu data={show}/> 
     }
 })
-}  
+} 
+    </div>
+    </section>
+
 </MainLayout>
 
 <style>
@@ -109,9 +134,105 @@ return <Menu data={show}/>
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    .overskrift_del{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        }
+    .overskrift_del h2{
+        font-family: "Mulish", sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        color: green;}
 
-   </style>
+    .overskrift_del p{
+        font-family: "Mulish", sans-serif;
+        line-height: 20px;
+        font-size: 15px;
+    }
 
-   <script>
-  
-   </script>
+    .grid_1{
+        display: grid;
+        margin: 20px;
+        margin-bottom: 50px;
+
+    }
+    .grid_1 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        .grid_knapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+        gap: 80px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+    .overskrift_del{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+                margin-bottom: 100px;
+
+        }
+    .overskrift_del h2{
+        font-family: "Mulish", sans-serif;
+        font-size: 35px;
+        font-weight: bolder;
+        color: green;}
+
+    .overskrift_del p{
+        font-family: "Mulish", sans-serif;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .grid_1{
+        display: grid;
+        margin: 20px;
+        margin-bottom: 50px;
+
+    }
+    .grid_1 h3{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+    .grid_1 p{
+       margin: 20px;
+
+    }
+    p{
+         font-size: 15px
+   
+}
+    .grid_1-1-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+        align-items: start; 
+    justify-items: start; 
+    gap: 0; 
+}
+    }
+    
+    
+    
+
+
+    </style>
+
+    <script>
+    
+    </script>
