@@ -38,7 +38,10 @@ console.log("DjjATA",data);
             <div class="overskrift_del">
                 <h2>Aften</h2>
                 <p>Søndag til torsdag: 17:30-21:00 <br/> Fredag og Lørdag: 17:30-21:30</p>
-                <p>Du kan vælge 2-retters menu: 375,-</p>
+            </div>
+
+             <div class="overskrift_del2">
+                <p class="underoverskrift">Du kan vælge 2-retters menu: 375,-</p>
                 <p>1 forret efter eget valg <br/> 1 hovedret efter eget valg <br/> 1 dessert efter eget valg</p>
             </div>
     </section>
@@ -97,6 +100,8 @@ return <Menu data={show}/>
         display: grid;
         grid-template-columns: auto auto;
         text-align: center;
+        gap: 10px;
+        margin-bottom: 40px;
         }
     .overskrift_del h2{
         font-family: "Mulish", sans-serif;
@@ -107,9 +112,25 @@ return <Menu data={show}/>
     .overskrift_del p{
         font-family: "Mulish", sans-serif;
         line-height: 20px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
+.overskrift_del2{
+        text-align: center;
+        gap: 10px;
+                margin-bottom: 50px;
+
+
+        }
+
+        .overskrift_del2 p{
+                font-size: 12px;
+                line-height: 18px;
+
+        }
+        .underoverskrift{
+            font-weight: bolder;
+        }
     .grid_1{
         display: grid;
         margin: 20px;
@@ -183,6 +204,9 @@ return <Menu data={show}/>
         align-items: start; 
     justify-items: start; 
     gap: 0; 
+}
+.overskrift_del2{
+    grid: ;
 }
 
     }
