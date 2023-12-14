@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Banner from '../components/Banner.astro';
+import Menu from '../components/Menu.astro';
+import Knap from '../components/Knap.astro';
+
+
+
+const data = await fetch(`https://upjnpiumxgyurfdoovar.supabase.co/rest/v1/menu?kategori=eq.Frokost`, {
+method:"GET",
+headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVwam5waXVteGd5dXJmZG9vdmFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDIyOTM4MzgsImV4cCI6MjAxNzg2OTgzOH0.wJkSpZHK8VGP9Md2Hj8xgw_eW9KEO_lkFkO0XyHzBz0"
+}}
+).then(response => response.json());
+console.log("DjjATA",data);
+
+
+---
+    <header>
+        <Header/>
+    </header>
+
+<MainLayout>
+    <Banner header="Menu" >
+	    <img src="/img/menubanner.webp" alt="hej" class="banner">
+    </Banner>
+
+	<section class="grid_knapper">
+        	<Knap variant="third" link="/frokost" >Frokost</Knap>
+			<Knap variant="third" link="/aften">Aften</Knap>
+			<Knap variant="third" link="/drikkevarer">Drikkevarer</Knap>
+            <Knap variant="third" link="/jul">Julen 2023</Knap>
+
+    </section>
+    <section>
+        <h2 class="madnavn">{data.overskrift}</h2>
+
+    </section>
+    <section class="menu">
+{data.map(show=>{
+        return <Menu data={show} />;
+})}
+    
+</MainLayout>
+
+<style>
+    .banner{
+       filter: brightness(50%);
+       z-index: -99;
+    } 
+    .grid_knapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 10px 10px;
+        margin: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+   </style>
+
+   <script>
+  
+   </script>

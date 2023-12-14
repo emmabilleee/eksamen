@@ -3,20 +3,14 @@ const {data} = Astro.props;
 console.log(data); 
 ---
 
-<article class="grid_1-1-1">
-    <section class="grid_1-1">
+<article>
     <section class="grid_1">  
-        <h2>{data.kategori}</h2>
-        <p class="abningstider">{data.kategoritekst}</p>
-        <h3>{data.overskrift}</h3>
-    </section>  
-
-    <section class="grid_2">   
-        <p>{data.madnavn}</p>
+        <div class="grid_2">
+            <p class="madnavn">{data.madnavn}</p>
+            <p class="pris">{data.pris}</p>
+        </div> 
         <p>{data.madtekst}</p>
-        <p>{data.pris}</p>
     </section>  
-    </section>
 </article>
 
 
@@ -36,37 +30,28 @@ hr {
         text-align: center;
         margin-bottom: 10px;
     }
-	.grid_1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .grid_2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-.lille_tekst {
-    font-size: 12px;
-    line-height: 2px;
-    margin-bottom: 20px;
-    margin-left: 38px;
-}
-.ret {
-    margin-bottom: 3px;
-    font-weight: bolder;
-}
+   .grid_1{
+        margin: 20px;
 
+   }
+   .grid_2{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    
+   }
+    .madnavn{
+        font-weight: bolder;
+    }
+    
 .pris {
     font-weight: bolder;
+    text-align: right;
 }
-.grid_1-1{
-    display: grid;
-            grid-template-rows: 1fr 1fr;
 
-}
 
 @media screen and (min-width: 1200px) {
-
        .grid_knapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
