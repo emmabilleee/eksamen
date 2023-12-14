@@ -39,10 +39,60 @@ console.log("DjjATA",data);
 
     </section>
     <section class="menu">
-{data.map(show=>{
+<!-- {data.map(show=>{
         return <Menu data={show} />;
-})}
-    
+})} -->
+<h2>Frokost</h2>
+<p>Serveres dagligt kl. 11:30-16:00</p>
+<h3>Anretninger</h3>
+{data.map(show=>{
+    if (show.overskrift==="Anretning") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h2>Sild</h2>
+{data.map(show=>{
+    if (show.overskrift==="Sild") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h2>Fisk</h2>
+{data.map(show=>{
+    if (show.overskrift==="Fisk") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h2>Klassiske danske retter & tatar</h2>
+{data.map(show=>{
+    if (show.overskrift==="Klassiske danske retter & tatar") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h2>Det grønne / veganske alternativer</h2>
+{data.map(show=>{
+    if (show.overskrift==="Det grønne / veganske alternativer") {
+return <Menu data={show}/> 
+    }
+})
+} 
+<h2>Ost</h2>
+{data.map(show=>{
+    if (show.overskrift==="Ost") {
+return <Menu data={show}/> 
+    }
+})
+}   
+<h2>Sødt</h2>
+{data.map(show=>{
+    if (show.overskrift==="Sødt") {
+return <Menu data={show}/> 
+    }
+})
+}  
 </MainLayout>
 
 <style>
