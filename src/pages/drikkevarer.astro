@@ -33,86 +33,130 @@ console.log("DjjATA",data);
 			<Knap variant="primary" link="/drikkevarer">Drikkevarer</Knap>
             <Knap variant="primary" link="/jul">Julen 2023</Knap>
     </section>
+
     <section class="menu">
-<h2>Drikkevarer</h2>
-<h3>Sodavand & vand</h3>
+            <div class="overskrift_del">
+                <h2>Drikkevarer</h2>
+            </div>
+    </section>
+
+  <section class="grid_1-1-1">
+      <div class="grid_1">
+                <h3>Sodavand & vand</h3>
 {data.map(show=>{
     if (show.overskrift==="Sodavand & vand") {
 return <Menu data={show}/> 
     }
 })
 }
-<h3>Varme drikke</h3>
-{data.map(show=>{
-    if (show.overskrift==="Varme drikke") {
-return <Menu data={show}/> 
-    }
-})
-}
-  
-<h3>Fadøl</h3>
-{data.map(show=>{
-    if (show.overskrift==="Fadøl") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Alkoholfri flaskeøl</h3>
-{data.map(show=>{
-    if (show.overskrift==="Alkoholfri flaskeøl") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Snaps</h3>
-{data.map(show=>{
-    if (show.overskrift==="Snaps") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Drinks & Spiritus</h3>
-{data.map(show=>{
-    if (show.overskrift==="Drinks & Spiritus") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Hvidvin</h3>
-{data.map(show=>{
-    if (show.overskrift==="Hvidvin") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Rosé</h3>
-{data.map(show=>{
-    if (show.overskrift==="Rosé") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Rødvin</h3>
-{data.map(show=>{
-    if (show.overskrift==="Rødvin") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Bobler</h3>
-{data.map(show=>{
-    if (show.overskrift==="Bobler") {
-return <Menu data={show}/> 
-    }
-})
-}
-<h3>Søde</h3>
-{data.map(show=>{
-    if (show.overskrift==="Søde") {
-return <Menu data={show}/> 
-    }
-})
-}
+      </div>
+        <div class="grid_1">
+
+                    
+            <h3>Varme drikke</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Varme drikke") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+            </div>
+                        <div class="grid_1">
+
+            <h3>Fadøl</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Fadøl") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                        </div>
+
+                            <div class="grid_1">
+
+            <h3>Alkoholfri flaskeøl</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Alkoholfri flaskeøl") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                            </div>
+
+                                <div class="grid_1">
+
+            <h3>Snaps</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Snaps") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                </div>
+
+                                    <div class="grid_1">
+
+            <h3>Drinks & Spiritus</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Drinks & Spiritus") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                    </div>
+
+                                        <div class="grid_1">
+
+            <h3>Hvidvin</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Hvidvin") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                        </div>
+
+                                            <div class="grid_1">
+
+            <h3>Rosé</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Rosé") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                            </div>
+
+                                                <div class="grid_1">
+
+            <h3>Rødvin</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Rødvin") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                                </div>
+                                                    <div class="grid_1">
+
+            <h3>Bobler</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Bobler") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                                    </div>
+                                                        <div class="grid_1">
+
+            <h3>Søde</h3>
+            {data.map(show=>{
+                if (show.overskrift==="Søde") {
+            return <Menu data={show}/> 
+                }
+            })
+            }
+                                                        </div>
 </MainLayout>
 
 <style>
@@ -129,6 +173,100 @@ return <Menu data={show}/>
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    .overskrift_del{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        }
+    .overskrift_del h2{
+        font-family: "Mulish", sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        color: green;}
+
+    .overskrift_del p{
+        font-family: "Mulish", sans-serif;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .grid_1{
+        display: grid;
+        margin: 20px;
+        margin-bottom: 50px;
+
+    }
+    .grid_1 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        .grid_knapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+        gap: 80px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+    .overskrift_del{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+                margin-bottom: 100px;
+
+        }
+    .overskrift_del h2{
+        font-family: "Mulish", sans-serif;
+        font-size: 35px;
+        font-weight: bolder;
+        color: green;}
+
+    .overskrift_del p{
+        font-family: "Mulish", sans-serif;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .grid_1{
+        display: grid;
+        margin: 20px;
+        margin-bottom: 50px;
+
+    }
+    .grid_1 h3{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+    .grid_1 p{
+       margin: 20px;
+
+    }
+    p{
+         font-size: 15px
+   
+}
+    .grid_1-1-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+        align-items: start; 
+    justify-items: start; 
+    gap: 0; 
+}
+
+    }
+
 
    </style>
 
