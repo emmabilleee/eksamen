@@ -7,7 +7,11 @@ console.log(data);
     <section class="grid_1">  
         <div class="grid_2">
             <p class="madnavn">{data.madnavn}</p>
-            <p class="pris">{data.pris}</p>
+            <p class="pris">{data.pris}<span>,-</span></p>
+            <p>{data.pris_glas} <span>(gl.)</span></p>
+            <p><span> / </span>{data.flaske}</p>
+            <p>{data.lille}</p>
+            <p><span> / </span>{data.stor}</p>
         </div> 
         <p>{data.madtekst}</p>
     </section>  

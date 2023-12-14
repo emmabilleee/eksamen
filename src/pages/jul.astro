@@ -35,10 +35,32 @@ console.log("DjjATA",data);
 
     </section>
     <section class="menu">
-{data.map(show=>{
-        return <Menu data={show} />;
-})}
+<h2> Julen 2023</h2>
+<p>10 retter, serveret ved bordet <br/> Serveres over 3 omgange <br/> Minimum 2 kuverter.</p>
+<p>Hold julefrokost hos Restaurant 1971. <br/> Vi tilbyder vores 1971 julemenu (1/11-23/12 <br/> Husk at reservere bord i god tid - I kan hygge ved bordet i 4 timer, eller længere</p>
     
+<h3>1 servering</h3>
+{data.map(show=>{
+    if (show.overskrift==="1 servering") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>2 servering</h3>
+{data.map(show=>{
+    if (show.overskrift==="2 servering") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>3 servering</h3>
+{data.map(show=>{
+    if (show.overskrift==="3 servering") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Pris pr. person kr. 378,-</h3>
 </MainLayout>
 
 <style>

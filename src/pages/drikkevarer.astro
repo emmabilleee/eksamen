@@ -34,10 +34,85 @@ console.log("DjjATA",data);
             <Knap variant="primary" link="/jul">Julen 2023</Knap>
     </section>
     <section class="menu">
+<h2>Drikkevarer</h2>
+<h3>Sodavand & vand</h3>
 {data.map(show=>{
-        return <Menu data={show} />;
-})}
-    
+    if (show.overskrift==="Sodavand & vand") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Varme drikke</h3>
+{data.map(show=>{
+    if (show.overskrift==="Varme drikke") {
+return <Menu data={show}/> 
+    }
+})
+}
+  
+<h3>Fadøl</h3>
+{data.map(show=>{
+    if (show.overskrift==="Fadøl") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Alkoholfri flaskeøl</h3>
+{data.map(show=>{
+    if (show.overskrift==="Alkoholfri flaskeøl") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Snaps</h3>
+{data.map(show=>{
+    if (show.overskrift==="Snaps") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Drinks & Spiritus</h3>
+{data.map(show=>{
+    if (show.overskrift==="Drinks & Spiritus") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Hvidvin</h3>
+{data.map(show=>{
+    if (show.overskrift==="Hvidvin") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Rosé</h3>
+{data.map(show=>{
+    if (show.overskrift==="Rosé") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Rødvin</h3>
+{data.map(show=>{
+    if (show.overskrift==="Rødvin") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Bobler</h3>
+{data.map(show=>{
+    if (show.overskrift==="Bobler") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Søde</h3>
+{data.map(show=>{
+    if (show.overskrift==="Søde") {
+return <Menu data={show}/> 
+    }
+})
+}
 </MainLayout>
 
 <style>

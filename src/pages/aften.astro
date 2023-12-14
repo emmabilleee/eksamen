@@ -35,9 +35,32 @@ console.log("DjjATA",data);
 
     </section>
     <section class="menu">
+    <h2>Aften</h2>
+    <p>Søndag til torsdag: 17:30-21:00 <br/> Fredag og Lørdag: 17:30-21:30</p>
+    <p>Du kan vælge 2-retters menu: 375,-</p>
+    <p>1 forret efter eget valg <br/> 1 hovedret efter eget valg <br/> 1 dessert efter eget valg</p>
+
+<h3>Forret</h3>
 {data.map(show=>{
-        return <Menu data={show} />;
-})}
+    if (show.overskrift==="Forret") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Hovedret</h3>
+{data.map(show=>{
+    if (show.overskrift==="Hovedret") {
+return <Menu data={show}/> 
+    }
+})
+}
+<h3>Dessert</h3>
+{data.map(show=>{
+    if (show.overskrift==="Dessert") {
+return <Menu data={show}/> 
+    }
+})
+}
     
 </MainLayout>
 
