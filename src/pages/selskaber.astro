@@ -41,19 +41,19 @@ import Knap from "../components/Knap.astro"
 </MainLayout>
 
 <style>
+/*Mobile*/
     p {
        font-family: "Mulish", sans-serif;
        line-height: 30px;
        font-size: 15px;
        margin-top: 20px;
     }
-
     h2 {
         font-family: "Mulish", serif;
         font-size: 20px;
         margin-bottom: 10px;
         font-weight: lighter;
-}
+    }   
 
     hr {
         width: 90%;
@@ -64,11 +64,13 @@ import Knap from "../components/Knap.astro"
         margin-bottom: 20%;
     }
     .banner{
-       filter: brightness(50%);
-       z-index: -99;
+        filter: brightness(50%);
+        z-index: -99;
     }
 
 @media screen and (min-width: 1200px) {
+/*Web*/
+
     .selskaber {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -76,17 +78,17 @@ import Knap from "../components/Knap.astro"
         margin: 20px auto; 
         max-width: 1200px; 
         padding: 0 20px; 
-        }
+    }
 
     h3 {
         font-family: "Yeseva One", serif;
         font-size: 18px;
-}
+    }   
     .knap{
         margin-left: 45%;
-}
-.selskaber_billede{
-    margin-bottom: -10px;
-}
+    }
+    .selskaber_billede{
+        margin-bottom: -10px;
+    }
 }
 </style>

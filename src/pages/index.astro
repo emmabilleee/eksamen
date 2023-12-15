@@ -73,34 +73,33 @@ import HeaderMain from "../components/Headermain.astro"
 </MainLayout>
 
 <style>
-	/*Mobile*/
-	/*Section 1*/
-
+/*Mobile*/
+/*Section 1*/
 	.logoe{
 		display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0px 100px;
-      align-items: center;
+      	grid-template-columns: 1fr;
+      	grid-template-rows: 0px 100px;
+     	align-items: center;
 	}
 	
 	.forsidebillede {
-      grid-column: 1/-1;
-      grid-row: 1/-1;
-      z-index: -1;
-      object-fit: cover;
-       width: auto;
-        height: 900px;
-		  filter: brightness(90%);
+		grid-column: 1/-1;
+		grid-row: 1/-1;
+		z-index: -1;
+		object-fit: cover;
+		width: auto;
+		height: 900px;
+		filter: brightness(90%);
  
     }
 	.logo{
 		width: 300px;
 		padding: 50px;
 		grid-column: 1/-1;
-      grid-row: 1;
-      text-align: center;
-      text-shadow: #ffffff 1px 0 10px;
-      margin-top: 200px;
+     	grid-row: 1;
+      	text-align: center;
+      	text-shadow: #ffffff 1px 0 10px;
+      	margin-top: 200px;
 	}
 	 .knapper {
 		display: flex;
@@ -115,10 +114,10 @@ import HeaderMain from "../components/Headermain.astro"
 		display: flex;
 		justify-content: center;
 		grid-column: 1/-1;
-      grid-row: 1;
-      text-align: center;
-      text-shadow: #ffffff 1px 0 10px;
-      margin-top: 20px;
+      	grid-row: 1;
+      	text-align: center;
+      	text-shadow: #ffffff 1px 0 10px;
+      	margin-top: 20px;
 	  
 
 	}
@@ -133,29 +132,19 @@ import HeaderMain from "../components/Headermain.astro"
 		font-family: "Montaga", serif;
 		font-weight: lighter;
 		margin-bottom: 10px;
-
 	}
 	.underoverskrift{
 		font-weight: bolder;
 		margin-bottom: 15px;
-
 	}
 	p{
 		font-family: "Mulish", sans-serif;
   		line-height: 40px;
   		font-size: 15px;	
 		font-weight: lighter;
-}
-.navne{
-	font-style: italic;
-}
-	.madbillede{
-		height: auto;
-		width: 300px;
 	}
-	.selskabsbillede{
-		height: auto;
-		width: 300px;
+	.navne{
+		font-style: italic;
 	}
 	.grid_1{
 		margin: 20px 20px;
@@ -165,6 +154,15 @@ import HeaderMain from "../components/Headermain.astro"
 		margin: 20px 20px 70px;
 
 	}
+	.madbillede{
+		height: auto;
+		width: 300px;
+	}
+	.selskabsbillede{
+		height: auto;
+		width: 300px;
+	}
+	
 	.img_column{
 		margin: 0px 0px;
 	}
@@ -179,56 +177,34 @@ import HeaderMain from "../components/Headermain.astro"
 	}
 
 @media screen and (min-width: 1200px) {
-	/*Section 1*/
+/*Web*/	
+/*Section 1*/
 
-.logoe{
-		display: grid;
-      	grid-template-columns: 1fr;
+	.logoe{
      	 grid-template-rows: 100px 100px;
-     	 align-items: center;
 	}
 	
 	.forsidebillede {
-    	grid-column: 1/-1;
-      grid-row: 1/-1;
-      z-index: -1;
-      object-fit: cover;
-	   aspect-ratio: 16/9;
+	   	aspect-ratio: 16/9;
         height: 870px; 
     }
 	.logo{
-	width: 400px;
-    padding: 50px;
-    grid-column: 1/-1;
-    grid-row: 2;
-    text-align: center;
-    text-shadow: #ffffff 1px 0 10px;
-    margin-top: 200px;
-	  margin: 0 auto; 
+		width: 400px;
+    	grid-row: 2;
+	  	margin: 0 auto; 
 
 	}
 	 .knapper {
-		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		text-align: center;
 		gap: 80px;
 		margin: 60px;
     }
 	.pil_boks{
-		display: flex;
-		justify-content: center;
-		grid-column: 1/-1;
-     	grid-row: 1;
-		text-align: center;
-      	text-shadow: #ffffff 1px 0 10px;
       	margin-top: 150px;
 	}
 	.pil{
 		width: 50px;
 		transition: transform .2s; 
-
-
 	}
 	.pil:hover {
 		animation: pulse 0.7s infinite ease-in-out alternate;
@@ -237,10 +213,8 @@ import HeaderMain from "../components/Headermain.astro"
 		from { transform: scale(0.9); }
 		to { transform: scale(1.1); }
 	}
-	
-	
 	/*Section 2*/
-
+	
 	.grid_1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -257,9 +231,15 @@ import HeaderMain from "../components/Headermain.astro"
 		max-width: 1100px; 
   		margin: 0 auto;
 		margin-bottom: 120px;
-				justify-content: center;
-
-
+		justify-content: center;
+	}
+	.madbillede{
+		height: auto;
+		width: 500px;
+	}
+	.selskabsbillede{
+		height: auto;
+		width: 500px;
 	}
 	.text_coloumn{
 		order: 2;
@@ -273,17 +253,7 @@ import HeaderMain from "../components/Headermain.astro"
 	.img_column2{
 		order: 2;
 	}
-	.knap{
-		margin-top: 20px;
-		justify-content: center;
-	}
-	.madbillede{
-		height: auto;
-		width: 500px;
-	}
-	.selskabsbillede{
-		height: auto;
-		width: 500px;
-	}
+	
+	
 }
 </style>
