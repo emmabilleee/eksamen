@@ -5,9 +5,6 @@ import Header from "../components/Header.astro";
 import Banner from '../components/Banner.astro';
 import Menu from '../components/Menu.astro';
 import Knap from '../components/Knap.astro';
-import Drikkevarer from '../components/Drikkevarer.astro';
-
-
 
 const data = await fetch(`https://upjnpiumxgyurfdoovar.supabase.co/rest/v1/menu?kategori=eq.Drikkevarer`, {
 method:"GET",

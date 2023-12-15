@@ -6,8 +6,6 @@ import Banner from '../components/Banner.astro';
 import Knap from '../components/Knap.astro';
 import Jul from '../components/Jul.astro';
 
-
-
 const data = await fetch(`https://upjnpiumxgyurfdoovar.supabase.co/rest/v1/menu?kategori=eq.Jul`, {
 method:"GET",
 headers: {
@@ -273,9 +271,7 @@ return <Jul data={show}/>
         max-width: 1100px;
         margin: 0 auto;
     }
-
-    
-
+}
     </style>
 
     <script>
