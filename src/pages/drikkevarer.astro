@@ -28,10 +28,10 @@ console.log("DjjATA",data);
     </Banner>
 
 	<section class="grid_knapper">
-        	<Knap variant="primary" link="/frokost" >Frokost</Knap>
-			<Knap variant="primary" link="/aften">Aften</Knap>
-			<Knap variant="primary" link="/drikkevarer">Drikkevarer</Knap>
-            <Knap variant="primary" link="/jul">Julen 2023</Knap>
+        	<Knap variant="third" link="/frokost" >Frokost</Knap>
+			<Knap variant="third" link="/aften">Aften</Knap>
+			<Knap variant="third" link="/drikkevarer">Drikkevarer</Knap>
+            <Knap variant="third" link="/jul">Julen 2023</Knap>
     </section>
 
     <section class="menu">
@@ -102,9 +102,9 @@ return <Menu data={show}/>
 
                                     <div class="grid_1">
 
-            <h3>Drinks & Spiritus</h3>
+            <h3>Drinks & spiritus</h3>
             {data.map(show=>{
-                if (show.overskrift==="Drinks & Spiritus") {
+                if (show.overskrift==="Drinks & spiritus") {
             return <Menu data={show}/> 
                 }
             })
@@ -235,7 +235,7 @@ return <Menu data={show}/>
     }
     .overskrift_del{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         text-align: center;
         justify-content: center;
         gap: 20px;
@@ -254,11 +254,15 @@ return <Menu data={show}/>
         line-height: 20px;
         font-size: 15px;
     }
-
+.line{
+        width: 500px;
+        margin-top: 18px;
+    }
     .grid_1{
         display: grid;
         margin: 20px;
         margin-bottom: 50px;
+        
 
     }
     .grid_1 h3{
@@ -277,11 +281,13 @@ return <Menu data={show}/>
 }
     .grid_1-1-1{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
         text-align: left;
         align-items: start; 
     justify-items: start; 
-    gap: 0; 
+    gap: 100px; 
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
     }

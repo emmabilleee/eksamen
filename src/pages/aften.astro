@@ -28,7 +28,7 @@ console.log("DjjATA",data);
     </Banner>
 
 	<section class="grid_knapper">
-       <Knap variant="primary" link="/frokost" >Frokost</Knap>
+       <Knap variant="third" link="/frokost" >Frokost</Knap>
 			<Knap variant="third" link="/aften">Aften</Knap>
 			<Knap variant="third" link="/drikkevarer">Drikkevarer</Knap>
             <Knap variant="third" link="/jul">Julen 2023</Knap>
@@ -172,7 +172,7 @@ return <Menu data={show}/>
     }
     .overskrift_del{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
         text-align: center;
         justify-content: center;
         gap: 20px;
@@ -180,6 +180,11 @@ return <Menu data={show}/>
                 margin-bottom: 100px;
 
         }
+         .line{
+        width: 500px;
+        margin-top: 10px;
+    }
+
     .overskrift_del h2{
         font-family: "Mulish", sans-serif;
         font-size: 35px;
@@ -191,7 +196,11 @@ return <Menu data={show}/>
         line-height: 20px;
         font-size: 15px;
     }
+        .overskrift_del2 p{
+                font-size: 15px;
+                line-height: 20px;
 
+        }
     .grid_1{
         display: grid;
         margin: 20px;
