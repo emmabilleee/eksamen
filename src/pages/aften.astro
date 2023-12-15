@@ -36,8 +36,11 @@ console.log("DjjATA",data);
     </section>
     <section class="menu">
             <div class="overskrift_del">
+                <img src="/img/line.svg" alt="hej" class="line">
                 <h2>Aften</h2>
                 <p>Søndag til torsdag: 17:30-21:00 <br/> Fredag og Lørdag: 17:30-21:30</p>
+                <img src="/img/line.svg" alt="hej" class="line">
+
             </div>
 
              <div class="overskrift_del2">
@@ -98,29 +101,28 @@ return <Menu data={show}/>
     }
     .overskrift_del{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
         text-align: center;
         gap: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         }
     .overskrift_del h2{
-        font-family: "Mulish", sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
-        color: green;}
+       font-family: "Mulish", sans-serif;
+        font-size: 23px;
+        color: #43594B;
+    }
 
-    .overskrift_del p{
+   .overskrift_del p{
         font-family: "Mulish", sans-serif;
-        line-height: 20px;
-        font-size: 12px;
+        line-height: 13px;
+        font-size: 9px;
+        text-align: start;
     }
 
 .overskrift_del2{
         text-align: center;
         gap: 10px;
-                margin-bottom: 50px;
-
-
+        margin-bottom: 50px;
         }
 
         .overskrift_del2 p{
@@ -139,9 +141,22 @@ return <Menu data={show}/>
     }
     .grid_1 h3{
         text-align: center;
-        font-size: 25px;
         margin-bottom: 20px;
+         font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: lighter;
 
+
+    }
+    .grid_1 p{
+       margin: 20px;
+       font-weight: bolder;
+
+    }
+
+     .line{
+        width: 100px;
+        margin-top: 10px;
     }
 
     @media screen and (min-width: 1200px) {

@@ -35,9 +35,15 @@ console.log("DjjATA",data);
     </section>
 
     <section class="menu">
+
             <div class="overskrift_del">
+                        	    <img src="/img/line.svg" alt="hej" class="line">
+
                 <h2>Drikkevarer</h2>
+                            	    <img src="/img/line.svg" alt="hej" class="line">
+
             </div>
+
     </section>
 
   <section class="grid_1-1-1">
@@ -175,19 +181,21 @@ return <Menu data={show}/>
     }
     .overskrift_del{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto ;
         text-align: center;
+        gap: 8px;
+        margin-bottom: 50px;
         }
     .overskrift_del h2{
-        font-family: "Mulish", sans-serif;
-        font-size: 20px;
-        font-weight: bolder;
-        color: green;}
+      font-family: "Mulish", sans-serif;
+        font-size: 23px;
+        color: #43594B;
+    }
 
     .overskrift_del p{
-        font-family: "Mulish", sans-serif;
-        line-height: 20px;
-        font-size: 15px;
+         font-family: "Mulish", sans-serif;
+        line-height: 13px;
+        font-size: 11px;
     }
 
     .grid_1{
@@ -197,10 +205,21 @@ return <Menu data={show}/>
 
     }
     .grid_1 h3{
-        text-align: center;
-        font-size: 25px;
+       text-align: center;
         margin-bottom: 20px;
+         font-family: "Yeseva One", serif;
+  font-size: 20px;
+  font-weight: lighter;
 
+    }
+     .grid_1 p{
+       margin: 20px;
+       font-weight: bolder;
+
+    }
+    .line{
+        width: 115px;
+        margin-top: 10px;
     }
 
     @media screen and (min-width: 1200px) {
