@@ -82,10 +82,18 @@ return <Jul data={show}/>
             </div>
     </section>
 
-            <div class="pris">
+    <div class="pris">
         <h3 >Pris pr. person kr. 378,-</h3>
     </div>
 
+     <section>
+        <div class="print">
+            <a href="https://drive.google.com/file/d/1cBmKmvUwnccD7XuSBQDWETt_qsYjpMaZ/view?usp=drive_link" target="_blank" >
+                <img src="img/printer.svg" alt="print" class="printer">
+                <p>Print menu</p>
+            </a>
+        </div>
+    </section>
 </MainLayout>
 
 <style>
@@ -173,6 +181,28 @@ return <Jul data={show}/>
         font-size: 15px;
         text-align: center;
     }
+
+    .print {
+        margin: 40px;
+    }
+    .print a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .print img {
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    .print p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        text-decoration: underline;
+        color: black;
+    }
+
     
 /*Web*/
     @media screen and (min-width: 1200px) {

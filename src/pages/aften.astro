@@ -83,6 +83,13 @@ return <Menu data={show}/>
 </section>
 
     
+ <section class="printer">
+        <a href="https://drive.google.com/file/d/1YkfxZmf_qpcFAa1hJtn_Uvo54EcHF24a/view?usp=drive_link" target="_blank">
+            <img src="img/printer.svg" alt="">
+            <p>Print menu</p>
+        </a>
+    </section>
+
 </MainLayout>
 
 <style>
@@ -159,6 +166,28 @@ return <Menu data={show}/>
         width: 100px;
         margin-top: 10px;
     }
+
+    .printer{
+        margin: 40px;
+    }
+    .printer a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .printer img {
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    .printer p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        text-decoration: underline;
+        color: black;
+    }
+
 
 /*Web*/
     @media screen and (min-width: 1200px) {

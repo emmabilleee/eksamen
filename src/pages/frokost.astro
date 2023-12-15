@@ -119,14 +119,40 @@ return <Menu data={show}/>
 } 
     </div>
     </section>
-    <section>
-        <a href=""></a>
+
+    <section class="printer">
+        <a href="https://drive.google.com/file/d/1SSbo7s2ZWjcDBgpYfGITqgjP6OS0ch6W/view?usp=drive_link" target="_blank">
+            <img src="img/printer.svg" alt="">
+            <p>Print menu</p>
+        </a>
     </section>
 
 </MainLayout>
 
 <style>
 /*Mobile*/
+
+    .printer{
+        margin: 40px;
+    }
+    .printer a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .printer img {
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    .printer p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        text-decoration: underline;
+        color: black;
+    }
+
     .banner{
         filter: brightness(50%);
         z-index: -99;

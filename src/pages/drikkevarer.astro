@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import Banner from '../components/Banner.astro';
 import Menu from '../components/Menu.astro';
 import Knap from '../components/Knap.astro';
+import Drikkevarer from '../components/Drikkevarer.astro';
 
 
 
@@ -44,7 +45,7 @@ console.log("DjjATA",data);
     </section>
 
   <section class="grid_1-1-1">
-      <div class="grid_1">
+        <div class="grid_1">
                 <h3>Sodavand & vand</h3>
 {data.map(show=>{
     if (show.overskrift==="Sodavand & vand") {
@@ -52,7 +53,8 @@ return <Menu data={show}/>
     }
 })
 }
-      </div>
+        </div>
+
         <div class="grid_1">
 
                     
@@ -63,8 +65,9 @@ return <Menu data={show}/>
                 }
             })
             }
-            </div>
-                        <div class="grid_1">
+        </div>
+
+        <div class="grid_1">
 
             <h3>Fadøl</h3>
             {data.map(show=>{
@@ -73,9 +76,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                        </div>
+        </div>
 
-                            <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Alkoholfri flaskeøl</h3>
             {data.map(show=>{
@@ -84,9 +87,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                            </div>
+        </div>
 
-                                <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Snaps</h3>
             {data.map(show=>{
@@ -95,9 +98,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                </div>
+        </div>
 
-                                    <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Drinks & spiritus</h3>
             {data.map(show=>{
@@ -106,9 +109,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                    </div>
+        </div>
 
-                                        <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Hvidvin</h3>
             {data.map(show=>{
@@ -117,9 +120,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                        </div>
+        </div>
 
-                                            <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Rosé</h3>
             {data.map(show=>{
@@ -128,9 +131,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                            </div>
+        </div>
 
-                                                <div class="grid_1">
+        <div class="grid_1">
 
             <h3>Rødvin</h3>
             {data.map(show=>{
@@ -139,8 +142,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                                </div>
-                                                    <div class="grid_1">
+        </div>
+
+        <div class="grid_1">
 
             <h3>Bobler</h3>
             {data.map(show=>{
@@ -149,8 +153,9 @@ return <Menu data={show}/>
                 }
             })
             }
-                                                    </div>
-                                                        <div class="grid_1">
+        </div>
+
+        <div class="grid_1">
 
             <h3>Søde</h3>
             {data.map(show=>{
@@ -159,7 +164,17 @@ return <Menu data={show}/>
                 }
             })
             }
-                                                        </div>
+        </div>
+  </section>
+
+    <section>
+        <div class="print">
+            <a href="https://drive.google.com/file/d/1cBmKmvUwnccD7XuSBQDWETt_qsYjpMaZ/view?usp=drive_link" target="_blank" >
+                <img src="img/printer.svg" alt="print" class="printer">
+                <p>Print menu</p>
+            </a>
+        </div>
+    </section>
 </MainLayout>
 
 <style>
@@ -209,6 +224,30 @@ return <Menu data={show}/>
     .line{
         width: 115px;
         margin-top: 10px;
+    }
+
+    .print{
+    margin: 20px;
+    }
+    .print a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .print img {
+        vertical-align: middle;
+    }
+
+    .print p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .printer{
+        width: 30px;
     }
 
     /*Web*/
