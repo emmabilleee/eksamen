@@ -30,6 +30,7 @@ const { variant, link } = Astro.props;
     width: 90px;
     /* border: solid 0.5px #FFFFFF; */
     text-align: center;
+   
   }
 
     .secondary:hover {
@@ -54,12 +55,13 @@ const { variant, link } = Astro.props;
     }
   @media screen and (min-width: 1200px){
     .secondary{
-      background-color:#43594B;
+      /* background-color:#43594B; */
+      background-color:#43594B(0, 0, 0, 0.7);
       color: white;
       font-size: 1rem;
       padding: 15px 60px;
       width: 90px;
-      /* border: solid 0.5px #FFFFFF; */
+      border: solid 0.5px #FFFFFF;
       text-align: center;
    
     }
