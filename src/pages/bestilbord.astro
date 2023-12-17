@@ -20,8 +20,12 @@ import Header from "../components/Header.astro";
                     <span id="guestCount">1</span>
                      <button id="increment">+</button>
                 </div>
-                <div class="center"> <button id="naste_knap">Næste</button></div>
-                 <hr>
+                
+                <div class="center"> 
+                     <img src="/img/line.svg" alt="hej" class="line">
+                    <button id="naste_knap">Næste</button>
+                    <img src="/img/line.svg" alt="hej" class="line">
+                </div>
              </section>
 
         <section class="margin">
@@ -45,6 +49,7 @@ import Header from "../components/Header.astro";
 
 <style>
 /*Mobile*/
+
     .pil{
         width: 10%;
         margin:0px;
@@ -117,16 +122,23 @@ import Header from "../components/Header.astro";
         padding: 10px 40px;
         cursor: pointer;
     }
-    .center {
+    .center {  
+        display: flex;
+        grid-template-columns: auto auto auto ;
         text-align: center;
+        gap:20px;
+        margin-top: 20px;
+
+    }
+     .line{
+        width: 100px;
         margin-top: 20px;
     }
-    hr {
-        margin-top: 20px;
-    }
+   
 
 @media screen and (min-width: 1200px) {
 /*Web*/
+ 
     .pil{
         width: 3%;
         top: -48%;
@@ -163,6 +175,20 @@ import Header from "../components/Header.astro";
         object-fit: cover;
         position: relative; /* Reset position for the image */
     }
+      .center {  
+        display: flex;
+        grid-template-columns: auto auto auto ;
+        text-align: center;
+        gap:20px;
+        margin-top: 20px;
+        justify-content: center;
+
+    }
+     .line{
+        width: 500px;
+        margin-top: 20px;
+    }
+   
 }
    
 </style>
