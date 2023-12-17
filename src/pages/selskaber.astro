@@ -7,34 +7,34 @@ import Formular from '../components/Formular.astro';
 import Knap from "../components/Knap.astro"
 
 ---
- <header>
+    <header>
         <Header/>
     </header>
 <MainLayout>
     <section>
-	 <Banner header="Selskaber" >
-	<img src="/img/selskaberbanner.webp" alt="hej" class="banner">
-</Banner>
+        <Banner header="Selskaber" >
+            <img src="/img/selskaberbanner.webp" alt="hej" class="banner">
+        </Banner> 
     </section>
 
     <section class="selskaber">
-<div>
-    <h2>Selskaber hos Frokostrestauranten 1971</h2>
-    <hr>
-    <p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig mærkedag i hyggelige omgivelser centralt på Frederiksberg. Vi modtager dags- og aftenarrangementer på op til 50 personer.
-    Vi tilbyder forskellige selskabsmenuer, men tager en personlig snak om jeres ønsker. 
-    Kontakt os på tlf. +45 5353 1971 eller udfyld formularen til højre, og vi vender tilbage hurtigst muligt.
-    </p>
-</div>
-
-    <div>
-        <Formular/> 
-        <div class="knap">
-        <Knap variant="primary" link="">Send</Knap>
+        <div>
+            <h2>Selskaber hos Frokostrestauranten 1971</h2>
+            <hr>
+            <p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig mærkedag i hyggelige omgivelser centralt på Frederiksberg. Vi modtager dags- og aftenarrangementer på op til 50 personer.
+            Vi tilbyder forskellige selskabsmenuer, men tager en personlig snak om jeres ønsker. 
+            Kontakt os på tlf. +45 5353 1971 eller udfyld formularen til højre, og vi vender tilbage hurtigst muligt.
+            </p>
         </div>
-    </div>
 
+        <div>
+            <Formular/> 
+            <div class="knap">
+                <Knap variant="primary" link="">Send</Knap>
+            </div>
+        </div>
     </section>
+
     <section>
         <img src="/img/selskaber_2.webp" alt="selskaber" class="selskaber_billede">
     </section>
@@ -47,18 +47,23 @@ import Knap from "../components/Knap.astro"
        line-height: 30px;
        font-size: 15px;
        margin-top: 20px;
+margin: 30px;
     }
     h2 {
         font-family: "Mulish", serif;
-        font-size: 20px;
+        font-size: 17px;
         margin-bottom: 10px;
         font-weight: lighter;
         color: #43594B;
+        margin: 30px;
+
     }   
 
     hr {
-        width: 90%;
+        width: 80%;
         color: #43594B;
+        margin: 30px;
+
     }
     .knap {
         margin-left: 42.5%;
@@ -68,6 +73,7 @@ import Knap from "../components/Knap.astro"
         filter: brightness(50%);
         z-index: -99;
     }
+   
 
 @media screen and (min-width: 1200px) {
 /*Web*/
@@ -79,8 +85,11 @@ import Knap from "../components/Knap.astro"
         margin: 20px auto; 
         max-width: 1200px; 
         padding: 0 20px; 
+    
     }
-
+h2{
+    font-size: 23px;
+}
     h3 {
         font-family: "Yeseva One", serif;
         font-size: 18px;
