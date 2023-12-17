@@ -1,7 +1,7 @@
 
 <header >
   <div>
-    <a href="/"><img id="logo" src="/img/logo_hjem_sort.svg" alt="logo" /></a>
+    <a href="/"><img id="logo" src="/img/logo_hjem_grøn.svg" alt="logo" /></a>
   </div>
   <nav>
     <ul class="menu">
@@ -16,6 +16,8 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
+    <div>
+       
   </nav>
 </header>
 <style>
@@ -66,7 +68,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: green; /* Set your preferred underline color */
+    background-color: green; 
     transition: width 0.3s ease;
 }
 
@@ -93,6 +95,13 @@
   .burger {
     display: none;
   }
+  .SoMe{
+        display: none;
+
+  }
+  .SoMe.active {
+    display: block; 
+  }
 
   li a {
     text-decoration: none;
@@ -112,36 +121,47 @@
     }
     .burger {
       display: block;
+                  z-index: 2;
+
     }
+ 
     .burger.active .line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
+
     }
 
     .burger.active .line:nth-child(2) {
       opacity: 0;
+
     }
 
     .burger.active .line:nth-child(3) {
       transform: rotate(-45deg) translate(5px, -5px);
+
     }
 
     nav.active .menu {
       display: block;
       position: absolute;
-      top: 120px;
+      top: 0px;
       left: 0;
-      width: 150%;
+      width: 100%;
       z-index: 1;
-      background-color: black;
+      background-color: white;
+      padding-top: 100px;
+      padding-bottom: 350px;
+      text-align: center;
     }
 
     nav.active .menu li {
-      margin: 1px 1px;
+      margin-left: 30px;
+      margin-bottom: 30px;
     }
 
     nav.active .menu a {
-      font-size: 15px;
+      font-size: 30px;
     }
+   
   }
   @media (min-width: 800px) {
     header {
@@ -206,20 +226,24 @@
   }
 </style>
 <script>
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector("nav");
-  const menu = document.querySelector(".menu");
-  const links = document.querySelectorAll(".menu li a");
+ const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+const links = document.querySelectorAll(".menu li a");
+const socialMedia = document.querySelector(".SoMe"); // Add this line
 
-  burger.addEventListener("click", () => {
+burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     nav.classList.toggle("active");
-  });
+    socialMedia.classList.toggle("active"); // Add this line
+});
 
-  links.forEach((link) => {
+links.forEach((link) => {
     link.addEventListener("click", () => {
-      burger.classList.remove("active");
-      nav.classList.remove("active");
+        burger.classList.remove("active");
+        nav.classList.remove("active");
+        socialMedia.classList.remove("active"); // Add this line
     });
-  });
+});
+
 </script>
