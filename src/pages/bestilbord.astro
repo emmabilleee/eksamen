@@ -1,12 +1,9 @@
 ---
 import '../styles/global.css';
 import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/Header.astro";
-
-
 ---
  <header>
-        <Header/>
+  
     </header>
 <MainLayout>
     <section class="grid_book_bord">
@@ -43,7 +40,7 @@ import Header from "../components/Header.astro";
 </section>
 
 <section class="fit">
-    <img src="/img/bestil_bord_3.webp" alt="bestilbord_billede" class="bestil_bord_2"></section>
+    <img src="/img/bestilbord.webp" alt="bestilbord_billede" class="bestil_bord_2"></section>
 </section>
       </MainLayout>
 
@@ -52,7 +49,7 @@ import Header from "../components/Header.astro";
 
     .pil{
         width: 10%;
-        margin:0px;
+        margin: 0;
     }
 	.bestil_bord {
         text-align: center;
@@ -68,11 +65,12 @@ import Header from "../components/Header.astro";
     }
         a {
         font-family: "Mulish", sans-serif;
-  		line-height: 30px;
   		font-size: 15px;	
 		font-weight: lighter;
         margin: 0px 0px 20px 0px;
         color: black;
+        text-decoration: none;
+
     }
     .fed {
         font-weight: bold;
@@ -140,9 +138,8 @@ import Header from "../components/Header.astro";
 /*Web*/
  
     .pil{
-        width: 3%;
-        top: -48%;
-        left: 3%;
+        width: 20px;
+      
     }
     .grid_book_bord {
         display: grid;
@@ -150,7 +147,7 @@ import Header from "../components/Header.astro";
     }
     .margin {
 		margin: 40px;
-		margin-top: 50px;
+		margin-top: 80px;
 	}
     p {
   		line-height: 30px;
@@ -158,6 +155,7 @@ import Header from "../components/Header.astro";
 		font-weight: lighter;
         margin: 0px 0px 20px 0px;
     }
+
     img {
         z-index: 99;
         position: absolute;
@@ -170,10 +168,14 @@ import Header from "../components/Header.astro";
     }
      
     img.bestil_bord_2 {
-         width: 100%; /* Set the width to 50% */
-        height: auto;
+         z-index: 99;
+        position: absolute;
+        width: 100%; /* Set the width to 50% */
+        height: 100%;
         object-fit: cover;
         position: relative; /* Reset position for the image */
+        left: 0;
+        top: 0;
     }
       .center {  
         display: flex;
@@ -184,11 +186,7 @@ import Header from "../components/Header.astro";
         justify-content: center;
 
     }
-     .line{
-        width: 500px;
-        margin-top: 20px;
-    }
-   
+
 }
    
 </style>
