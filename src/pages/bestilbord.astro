@@ -48,8 +48,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 /*Mobile*/
 
     .pil{
-        width: 10%;
-        margin: 0;
+        width: 8%;
+        margin-left: 15px;
+        margin-bottom: 30px;
     }
 	.bestil_bord {
         text-align: center;
@@ -130,16 +131,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     }
      .line{
         width: 100px;
-        margin-top: 20px;
+        margin-top: 8px;
     }
    
+ 
 
 @media screen and (min-width: 1200px) {
 /*Web*/
  
     .pil{
-        width: 30px;
-      
+      margin-top: 15px;
+      margin-left: 30px;
+      width: 6%;
     }
     .grid_book_bord {
         display: grid;
@@ -156,12 +159,6 @@ import MainLayout from "../layouts/MainLayout.astro";
         margin: 0px 0px 20px 0px;
     }
 
-    img {
-        z-index: 99;
-        position: absolute;
-        width: auto;
-       object-fit: cover;
-    }
     .fit {
         position: relative; /* Ensure relative positioning for the container */
     }
@@ -175,6 +172,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         position: relative; /* Reset position for the image */
         left: 0;
         top: 0;
+        filter: brightness(70%);
     }
       .center {  
         display: flex;
