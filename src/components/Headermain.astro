@@ -164,6 +164,32 @@
     li a:hover {
 	  color: white;
     }
+
+        .menu a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
   }
 </style>
 <script>

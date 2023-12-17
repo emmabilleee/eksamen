@@ -52,18 +52,31 @@
     margin-right: 0;
   }
 
-  .menu a {
-    display: block;
-    padding: 20px;
+ .menu a {
+    position: relative;
     text-decoration: none;
+    color: black;
     transition: color 0.3s;
+}
 
-  }
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green; /* Set your preferred underline color */
+    transition: width 0.3s ease;
+}
 
-  .menu a:hover {
-    color: #43594B;
-    scale: 1.1;
-  }
+.menu a:hover {
+    color: green;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
 
   .burger {
     width: 30px;
@@ -162,8 +175,34 @@
       font-size: 1rem;
     }
     li a:hover {
-	  color: #43594B;
+	  color: green;
     }
+
+    .menu a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #43594b;
+    transition: width 0.4s ease;
+}
+
+.menu a:hover {
+    color: #43594b;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
   }
 </style>
 <script>
