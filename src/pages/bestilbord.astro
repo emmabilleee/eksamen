@@ -38,7 +38,7 @@ import Header from "../components/Header.astro";
          </section>
 </section>
 
-<section>
+<section class="fit">
     <img src="/img/bestil_bord_3.webp" alt="bestilbord_billede" class="bestil_bord_2"></section>
 </section>
 </MainLayout>
@@ -149,14 +149,19 @@ import Header from "../components/Header.astro";
     img {
         z-index: 99;
         position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 125%;
+       width: auto;
+       height: 100%;
+        object-fit: cover;
     }
-    .bestil_bord_2{
-         width: 50%;
-         height: 107.1%;
+   .fit {
+        position: relative; /* Ensure relative positioning for the container */
+    }
+     }
+    img.bestil_bord_2 {
+        width: 100%; /* Set the width to 50% */
+        height: auto;
+        object-fit: cover;
+        position: relative; /* Reset position for the image */
     }
 }
    

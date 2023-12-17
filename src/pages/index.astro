@@ -29,7 +29,7 @@ import HeaderMain from "../components/Headermain.astro"
 	<section class="section2" id="section2">
 		<div class="grid_1">
 			<div class="text_coloumn">
-				<h2>Velkommen til restarant 1971</h2>
+				<h2>Velkommen til restaurant 1971</h2>
 				<p class="underoverskrift">Dansk mad med et strejf af fransk bistro</p>
 				<p>Restaurant 1971 er en del af Frederik VI på Frederiksberg Alle 
 				42A, og betragtes som en søsterfilial til vores yderst velbesøgte 
@@ -88,8 +88,9 @@ import HeaderMain from "../components/Headermain.astro"
 		z-index: -1;
 		object-fit: cover;
 		width: auto;
-		height: 900px;
-		filter: brightness(90%);
+		height: 1100px;
+		filter: brightness(40%);
+		aspect-ratio: 10/16;
  
     }
 	.logo{
@@ -125,10 +126,10 @@ import HeaderMain from "../components/Headermain.astro"
 /*Section 2*/
 	.section2{
 		margin: 25px;
-		margin-top: 0px;
+		margin-top: 150px;
 	}
 	h2{
-		font-size: 25px;
+		font-size: 20px;
 		font-family: "Montaga", serif;
 		font-weight: lighter;
 		margin-bottom: 10px;
@@ -136,11 +137,12 @@ import HeaderMain from "../components/Headermain.astro"
 	.underoverskrift{
 		font-weight: bolder;
 		margin-bottom: 15px;
+		font-style: italic;
 	}
 	p{
 		font-family: "Mulish", sans-serif;
-  		line-height: 40px;
-  		font-size: 15px;	
+  		line-height: 28px;
+  		font-size: 14px;	
 		font-weight: lighter;
 	}
 	.navne{
@@ -179,16 +181,24 @@ import HeaderMain from "../components/Headermain.astro"
 @media screen and (min-width: 1200px) {
 /*Web*/	
 /*Section 1*/
-
+.section1 {
+	margin-bottom: 150px;
+}
 	.logoe{
-     	 grid-template-rows: 100px 100px;
+     	 grid-template-rows: 150px 100px;
 	}
 	
 	.forsidebillede {
+			grid-column: 1/-1;
+		grid-row: 1/-1;
 	   	aspect-ratio: 16/9;
-        height: 870px; 
 			filter: brightness(40%);
+			   object-fit: cover;
+			     width: 100%;
+        height: 440%;
     }
+
+	
 	.logo{
 		width: 400px;
     	grid-row: 2;
@@ -201,7 +211,7 @@ import HeaderMain from "../components/Headermain.astro"
 		margin: 60px;
     }
 	.pil_boks{
-      	margin-top: 150px;
+      	margin-top: 240px;
 	}
 	.pil{
 		width: 50px;
@@ -215,7 +225,7 @@ import HeaderMain from "../components/Headermain.astro"
 		to { transform: scale(1.1); }
 	}
 	/*Section 2*/
-	
+
 	.grid_1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
