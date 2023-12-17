@@ -11,6 +11,7 @@ import Banner  from '../components/Banner.astro';
     
 <section class="section_1">
        <Banner header="Om os" >
+        <img src="/img/ny_facadebanner_3.webp" alt="bannerbillede" class="banner1">
 	<img src="/img/facade_omos_4.webp" alt="bannerbillede" class="banner">
 </Banner>
 </section>
@@ -72,6 +73,16 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
 <style>
 /*Mobile*/
 /*Section 1*/
+  .banner{
+       filter: brightness(50%);
+       z-index: -99;
+       visibility: hidden;
+    } 
+    .banner1 {
+         z-index: -99;
+        margin-top: 50px;
+         filter: brightness(50%);
+    }
     .menu_billede {
         position: relative; 
     }
@@ -124,6 +135,12 @@ Carlsberg og Frederiksberg Bryghus. Hertil pænt udvalg af vin på glas + snacks
     }
 
   @media screen and (min-width: 1200px){
+        .banner1 {
+            display: none;
+        }
+        .banner {
+            visibility: visible;
+        }
 /*Web*/
     .section_2{
         display: grid;

@@ -13,17 +13,18 @@ import Knap from "../components/Knap.astro"
 <MainLayout>
     <section>
         <Banner header="Selskaber" >
+              <img src="/img/ny_logo_øl.webp" alt="bannerbillede" class="banner1">
             <img src="/img/selskaberbanner.webp" alt="bannerbillede" class="banner">
         </Banner> 
     </section>
 
     <section class="selskaber">
         <div>
-            <h2>Selskaber hos Frokostrestauranten 1971</h2>
-            <hr>
+            <h2>Selskaber hos Restaurant 1971</h2>
+         
             <p>Afhold din julefrokost, fødselsdag, bryllup eller anden særlig mærkedag i hyggelige omgivelser centralt på Frederiksberg. Vi modtager dags- og aftenarrangementer på op til 50 personer.
             Vi tilbyder forskellige selskabsmenuer, men tager en personlig snak om jeres ønsker. 
-            Kontakt os på tlf. +45 5353 1971 eller udfyld formularen til højre, og vi vender tilbage hurtigst muligt.
+            Kontakt os på <a href="Tel:53 53 19 71">Tlf: 53 53 19 71</a> eller udfyld formularen til højre, og vi vender tilbage hurtigst muligt.
             </p>
         </div>
 
@@ -42,29 +43,39 @@ import Knap from "../components/Knap.astro"
 
 <style>
 /*Mobile*/
+a {
+    font-family: "Mulish", sans-serif;
+       line-height: 30px;
+       font-size: 15px;
+       color: black;
+}
+  .banner{
+       z-index: -99;
+       visibility: hidden;
+    } 
+    .banner1 {
+         z-index: -99;
+        margin-top: 50px;
+         filter: brightness(50%);
+    }
     p {
        font-family: "Mulish", sans-serif;
        line-height: 30px;
        font-size: 15px;
-       margin-top: 20px;
-margin: 30px;
+       margin: 15px 30px 0px 30px;
+
     }
     h2 {
         font-family: "Mulish", serif;
         font-size: 17px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-weight: lighter;
         color: #43594B;
-        margin: 30px;
+        margin: 40px 20px 0px 30px;
 
     }   
 
-    hr {
-        width: 80%;
-        color: #43594B;
-        margin: 30px;
-
-    }
+ 
     .knap {
         margin-left: 42.5%;
         margin-bottom: 20%;
@@ -77,7 +88,12 @@ margin: 30px;
 
 @media screen and (min-width: 1200px) {
 /*Web*/
-
+        .banner1 {
+            display: none;
+        }
+        .banner {
+            visibility: visible;
+        }
     .selskaber {
         display: grid;
         grid-template-columns: 1fr 1fr;

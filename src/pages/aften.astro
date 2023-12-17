@@ -24,6 +24,7 @@ console.log("DjjATA",data);
 
 <MainLayout>
     <Banner header="Menu" >
+        <img src="/img/ny_anretning.webp" alt="bannerbillede" class="banner1">
 	    <img src="/img/menu_banner.webp" alt="bannerbillede" class="banner">
     </Banner>
 
@@ -94,10 +95,17 @@ return <Menu data={show}/>
 
 <style>
 /*Mobile*/
+
     .banner{
        filter: brightness(50%);
        z-index: -99;
+       visibility: hidden;
     } 
+     .banner1 {
+         z-index: -99;
+        margin-top: 50px;
+         filter: brightness(50%);
+    }
     .grid_knapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -191,6 +199,12 @@ return <Menu data={show}/>
 
 /*Web*/
     @media screen and (min-width: 1200px) {
+         .banner1 {
+            display: none;
+        }
+        .banner {
+            visibility: visible;
+        }
         .grid_knapper {
         display: grid;
         grid-template-columns: auto auto auto auto;
